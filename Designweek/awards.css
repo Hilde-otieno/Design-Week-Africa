@@ -1,0 +1,2137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  /* padding: 10px 20px; */
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  color: rgb(253, 192, 39);
+  font-size: 20px;
+}
+#navbar .nav-item {
+  color: white; /* Set text color to yellow */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+#logo {
+  width: 100px;
+  height: 80px;
+  margin-top: 2.5px;
+  margin-left: 10px;
+  /* object-fit: cover; */
+}
+
+  
+  /* Styling for navbar links */
+  .nav-item {
+    cursor: pointer;
+    /* padding: 10px 15px; */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+  }
+  
+  /* Hover effect for nav items */
+  .nav-item:hover {
+    color: white; /* Text color change on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+  }
+  
+  /* Active link styling */
+  .nav-item.active {
+    background-color: rgb(245, 240, 65);
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Flex container for main navigation items */
+  #nav {
+    display: flex;
+    gap: 4%;
+    margin-left: 750px;
+    color: rgb(253, 192, 39);
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  /* Flex container for additional navigation items */
+  #nav2 {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  /* Styling for dropdown menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgb(253, 192, 39);
+  
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Show dropdown content when hovering over dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Styling for dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Subtle background on hover */
+  }
+  
+  #nai{
+    font-size: 45px;
+    /* color: rgb(107, 179, 55); */
+  }
+  
+/* Landing Section */
+#landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(253, 192, 39);
+}
+
+#background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/arrive.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#page {
+    text-align: center;
+    color: white;
+    background: rgba(16, 17, 0, 0.6);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#take {
+  font-size: 50px;
+  margin-bottom: 0px; /* No space below #take */
+}
+
+#nairobi {
+  padding-bottom: 0px; /* No space below #nairobi */
+  font-size: 35px;
+  margin-top: 5px; /* Minimal space above #nairobi */
+}
+
+#through {
+  font-size: 90px;
+  color: rgb(99, 165, 55);
+  margin-top: 0px; /* Minimal space above #through */
+  margin-bottom: 5px; /* Minimal space below #through */
+}
+
+#booklet{
+  width: 800px;
+  height: 1050px;
+  border-radius: 500px;
+  margin-top: 70px;
+}
+  #jan{
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  
+
+/* Awards Form Section */
+.award-form-container {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.award-form-section {
+    flex: 2;
+    width: 500px;
+}
+
+.award-key-dates {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.award-form-container h3 {
+    margin-top: 0;
+}
+
+.award-form-container input, 
+.award-form-container select, 
+.award-form-container textarea, 
+.award-form-container button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.award-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.award-form-container button:hover {
+    background-color: #45a049;
+}
+
+.award-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.award-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.award-checkbox-container input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.award-checkbox-container label {
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.award-key-dates strong {
+    color: red;
+}
+
+#award-sub {
+    width: 250px;
+}
+
+
+/* Popup container */
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Hidden class to hide the popup */
+.hidden {
+    display: none;
+}
+
+/* Close button */
+.close-btn {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+
+#get {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;  /* Full width of the container */
+    height: 350px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    
+    /* Background Image with Overlay */
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Black overlay with transparency */
+      url('Images/design.jpeg');  /* Your background image */
+    background-size: cover;  /* Ensures the image covers the area without stretching */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+  }
+  
+  /* Optional: Add a yellow triangle effect at the bottom */
+  #get::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;  /* Makes the triangle span the full width */
+    height: 0;
+    border-left: 0 solid transparent;  /* Not needed anymore */
+    border-right: 0 solid transparent;  /* Not needed anymore */
+    border-bottom: 350px solid rgba(255, 255, 0, 0.6); /* Yellow triangle */
+  }
+  
+  /* Style for the text inside #get */
+  #get h3 {
+    font-size: 24px;
+    color: black;  /* White text color */
+    margin: 0;
+    margin-top: 80px;
+    z-index: 1;  /* Ensure the text is on top of the background */
+    position: relative;  /* Allow the z-index to work */
+  }
+  
+  #get h1 {
+    font-size: 45px;
+    color: black;  /* White text color */
+    margin-bottom: 80px;
+    z-index: 1;  /* Ensure the text is on top of the background */
+    position: relative;  /* Allow the z-index to work */
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Text color */
+    border-radius: 20px;
+    margin-left: 750px;
+    font-size: 35px;
+    margin-top: 50px;
+    background-color: rgb(253, 192, 39); /* Button background color */
+    border: none; /* Remove default button border */
+    text-align: center;
+    cursor: pointer; /* Make the button clickable */
+  }
+  
+  #view a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color to white */
+    display: block; /* Make the link a block element */
+    height: 100%; /* Make the link fill the entire button */
+    width: 100%; /* Make the link fill the entire button */
+    line-height: 30px; /* Vertically center the text */
+    margin-top: 15px;
+  }
+  
+  /* Hover effect for the button */
+  #view:hover {
+    background-color: rgb(107, 179, 55); /* Change to a darker blue when hovered */
+  }
+  
+  /* Optional: You can also change the link color on hover */
+  #view:hover a {
+    color: white; /* Keep the text color white, but you could change it if you want */
+  }
+  
+
+  #footer {
+    margin-top: 100px;
+    display: flex;
+    gap: 11%;
+    background-color: rgb(253, 192, 39);
+    position: relative; /* Ensure the pseudo-element can be positioned correctly */
+    background-size: cover; /* Ensures the background image covers the entire footer */
+    background-position: center; /* Centers the image within the footer */
+    height: 400px; /* Adjust this as needed for the footer height */
+    z-index: 0; /* Ensures content stays above the overlay */
+  }
+  
+  #footer::before {
+    content: ''; /* Adds a pseudo-element for the background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherits the background image from the parent */
+    background-size: cover; /* Ensures the background image is fully covered */
+    background-position: center; /* Centers the image within the footer */
+  }
+  
+  #footer::after {
+    content: ''; /* Adds a white overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 224, 20, 0.5); /* White overlay with 50% opacity */
+    z-index: -1; /* Ensures the overlay stays behind the content but above the blurred image */
+  }
+  
+  #foot {
+    margin-left: 20px;
+    position: relative; /* Ensures content stays above the overlay */
+    z-index: 1; /* Keeps the content above the overlay */
+    color: black; /* Ensures the text is clearly visible (black text on a light background) */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); Adds a shadow to text for better readability */
+  }
+  
+  #finish {
+    width: 250px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 20px;
+  }
+  
+  #facebook {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  
+  #menu h3{
+    font-size: 40px;
+  }
+  #menu p{
+    font-size: 25px;
+  }
+  
+  #media {
+    display: flex;
+    gap: 3%;
+  }
+  #schools{
+    display: block;
+  }
+  #menu{
+    margin-top: 50px
+  }
+  .form-container {
+    background-color: rgb(107, 179, 55);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 180px;
+    margin-top: 100px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 40%;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: rgb(10, 10, 53);
+    color: white;
+  }
+ 
+  /* Global Reset and Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+/* Navbar Styles */
+#navbar {
+display: flex;
+align-items: center;
+position: fixed;
+background-color: black;
+top: 0;
+left: 0;
+width: 100%;
+height: 80px;
+z-index: 1000;
+color: rgb(253, 192, 39);
+font-size: 20px;
+}
+
+#navbar .nav-item {
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+font-size: 16px;
+}
+
+#logo {
+width: 100px;
+height: 80px;
+margin-top: 2.5px;
+margin-left: 10px;
+}
+
+#nav {
+display: flex;
+gap: 4%;
+margin-left: auto;
+margin-right: 20px;
+color: rgb(253, 192, 39);
+align-items: center;
+font-size: 18px;
+}
+
+#nav2 {
+display: flex;
+gap: 10px;
+font-size: 16px;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+color: rgb(253, 192, 39);
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+background-color: rgb(253, 192, 39);
+}
+
+#nai {
+font-size: 45px;
+}
+
+/* Landing Section */
+#landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(253, 192, 39);
+}
+
+#background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('Images/arrive.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#page {
+  text-align: center;
+  color: white;
+  background: rgba(16, 17, 0, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#take {
+font-size: 50px;
+margin-bottom: 0px;
+}
+
+#nairobi {
+padding-bottom: 0px;
+font-size: 35px;
+margin-top: 5px;
+}
+
+#through {
+font-size: 90px;
+color: rgb(99, 165, 55);
+margin-top: 0px;
+margin-bottom: 5px;
+}
+
+#booklet {
+width: 800px;
+height: 1050px;
+border-radius: 500px;
+margin-top: 70px;
+}
+
+#jan {
+margin-top: 100px;
+margin-left: 50px;
+}
+
+/* Awards Form Section */
+.award-form-container {
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.award-form-section {
+  flex: 2;
+  width: 500px;
+}
+
+.award-key-dates {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.award-form-container h3 {
+  margin-top: 0;
+}
+
+.award-form-container input, 
+.award-form-container select, 
+.award-form-container textarea, 
+.award-form-container button {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.award-form-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.award-form-container button:hover {
+  background-color: #45a049;
+}
+
+.award-form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.award-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.award-checkbox-container input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+.award-checkbox-container label {
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.award-key-dates strong {
+  color: red;
+}
+
+#award-sub {
+  width: 250px;
+}
+
+/* Popup container */
+.popup {
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Hidden class to hide the popup */
+.hidden {
+  display: none;
+}
+
+/* Close button */
+.close-btn {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Footer Section */
+#footer {
+  margin-top: 100px;
+  display: flex;
+  gap: 11%;
+  background-color: rgb(253, 192, 39);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  z-index: 0;
+}
+
+#footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+}
+
+#footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 224, 20, 0.5);
+  z-index: -1;
+}
+
+#foot {
+  margin-left: 20px;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+#finish {
+  width: 250px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: 20px;
+}
+
+#facebook {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+#media {
+  display: flex;
+  gap: 3%;
+}
+
+#schools {
+  display: block;
+}
+
+#menu {
+  margin-top: 50px;
+}
+
+.form-container {
+  background-color: rgb(107, 179, 55);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 180px;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  width: 40%;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(10, 10, 53);
+  color: white;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 2000px) {
+  #nav {
+      margin-left: auto;
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #nav {
+      font-size: 14px;
+      margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #nav {
+      font-size: 14px;
+      margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #nav {
+      font-size: 14px;
+      margin-right: 50px;
+  }
+  .award-form-container {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+      flex-direction: column;
+      margin-left: 0;
+      font-size: 14px;
+  }
+  #landing {
+      height: auto;
+  }
+  .form-container {
+      width: 90%;
+      margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #navbar {
+      height: 60px;
+  }
+  #nav {
+      margin-left: 0;
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #navbar {
+      height: 50px;
+      font-size: 14px;
+  }
+  #nav {
+      font-size: 12px;
+  }
+  .award-form-container {
+      gap: 5px;
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width:350px){
+  body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+}
+
+}
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+}
+
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+}
+
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+}
+
+@media screen and  (min-width: 1041px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+}
+/* 350px and below */
+@media screen and (max-width: 350px) {
+#navbar {
+  flex-direction: column;
+  height: auto;
+  gap: 1%;
+  color: white;
+  width: 100%;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  margin-left: -72%;
+}
+
+#nav {
+  display: none; /* Hide navigation links initially */
+  flex-direction: column;
+  gap: 1%;
+  margin-left: -40%;
+  background-color: black; /* Ensure background is visible */
+  width: 100%; /* Ensure nav items take full width on smaller screens */
+  text-align: center; /* Center-align nav items */
+}
+
+.nav-item {
+  color: white; /* Ensure nav items text is white */
+  padding: 10px 15px;
+  font-size: 10px;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  /* z-index: 1000; */
+  width: 100%;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Change color on hover for smaller screens */
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown positioning fix */
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  top: 100%; /* Position it right below the dropdown button */
+  left: 0;
+  margin-left: -80%;
+  width: 100%; /* Make dropdown take full width of the navbar */
+}
+
+.dropdown-content a {
+  color: black; /* Ensure text is black inside dropdown */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(253, 192, 39); /* Highlight on hover */
+}
+
+/* Show dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+}
+
+
+/* For screens between 351px and 580px */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 1%;
+    color: white;
+    width: 100%;
+  }
+
+  #logo {
+    margin-left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: -72%;
+  }
+
+  #nav {
+    display: none; /* Hide navigation links initially */
+    flex-direction: column;
+    gap: 1%;
+    margin-left: -60%;
+    background-color: black; /* Ensure background is visible */
+    width: 100%; /* Ensure nav items take full width on smaller screens */
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    color: white; /* Ensure nav items text is white */
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    /* z-index: 1000; */
+    width: 100%;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  /* Change color on hover for smaller screens */
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Dropdown positioning fix */
+  .dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position it right below the dropdown button */
+    left: 0;
+    margin-left: -80%;
+    width: 100%; /* Make dropdown take full width of the navbar */
+  }
+
+  .dropdown-content a {
+    color: black; /* Ensure text is black inside dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Highlight on hover */
+  }
+
+  /* Show dropdown content when hovering */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* For screens between 581px and 780px */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 1%;
+    color: white;
+    width: 100%;
+  }
+
+  #logo {
+    margin-left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: -72%;
+  }
+
+  #nav {
+    display: none; /* Hide navigation links initially */
+    flex-direction: column;
+    gap: 1%;
+    margin-left: -60%;
+    background-color: black; /* Ensure background is visible */
+    width: 100%; /* Ensure nav items take full width on smaller screens */
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    color: white; /* Ensure nav items text is white */
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    /* z-index: 1000; */
+    width: 100%;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  /* Change color on hover for smaller screens */
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Dropdown positioning fix */
+  .dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position it right below the dropdown button */
+    left: 0;
+    margin-left: -80%;
+    width: 100%; /* Make dropdown take full width of the navbar */
+  }
+
+  .dropdown-content a {
+    color: black; /* Ensure text is black inside dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Highlight on hover */
+  }
+
+  /* Show dropdown content when hovering */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 741px) and (max-width: 1030px) {
+  #navbar {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 20px; */
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    color: rgb(253, 192, 39);
+    font-size: 20px;
+  }
+  #navbar .nav-item {
+    color: white; /* Set text color to yellow */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #logo {
+    width: 100px;
+    height: 80px;
+    margin-top: 2.5px;
+    margin-left: 10px;
+    /* object-fit: cover; */
+  }
+  
+  /* Styling for navbar links */
+  .nav-item {
+    cursor: pointer;
+    /* padding: 10px 15px; */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+  }
+  
+  /* Hover effect for nav items */
+  .nav-item:hover {
+    color: white; /* Text color change on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+  }
+  
+  /* Active link styling */
+  .nav-item.active {
+    background-color: rgb(253, 192, 39);
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Flex container for main navigation items */
+  #nav {
+    display: flex;
+    gap: 4%;
+    margin-left: 5%;
+    color: rgb(253, 192, 39);
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  /* Flex container for additional navigation items */
+  #nav2 {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  /* Styling for dropdown menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgb(253, 192, 39);
+  
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Show dropdown content when hovering over dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Styling for dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Subtle background on hover */
+  }
+}
+
+/* For screens above 1041px */
+@media screen and (min-width: 1031px) {
+  #navbar {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 20px; */
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    color: rgb(253, 192, 39);
+    font-size: 20px;
+  }
+  #navbar .nav-item {
+    color: white; /* Set text color to yellow */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #logo {
+    width: 100px;
+    height: 80px;
+    margin-top: 2.5px;
+    margin-left: 10px;
+    /* object-fit: cover; */
+  }
+  
+  /* Styling for navbar links */
+  .nav-item {
+    cursor: pointer;
+    /* padding: 10px 15px; */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+  }
+  
+  /* Hover effect for nav items */
+  .nav-item:hover {
+    color: white; /* Text color change on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+  }
+  
+  /* Active link styling */
+  .nav-item.active {
+    background-color: rgb(253, 192, 39);
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Flex container for main navigation items */
+  #nav {
+    display: flex;
+    gap: 4%;
+    margin-left: 750px;
+    color: rgb(253, 192, 39);
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  /* Flex container for additional navigation items */
+  #nav2 {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  /* Styling for dropdown menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgb(253, 192, 39);
+  
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Show dropdown content when hovering over dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Styling for dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Subtle background on hover */
+  }
+}
+
+
+@media (max-width: 350px) {
+  #take {
+    font-size: 30px;
+  }
+
+  #nairobi {
+    font-size: 20px;
+  }
+
+  #through {
+    font-size: 50px;
+  }
+  #booklet{
+    width: 95%;
+    height: 60%;
+    /* border-radius: 500px; */
+    margin-top: 0px;
+  }
+  #landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(253, 192, 39);
+  }
+  #jan{
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #take {
+    font-size: 30px;
+  }
+
+  #nairobi {
+    font-size: 20px;
+  }
+
+  #through {
+    font-size: 50px;
+  }
+  #booklet{
+    width: 80%;
+    height: 50%;
+    /* border-radius: 500px; */
+    margin-top: 0px;
+  }
+  #landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(253, 192, 39);
+  }
+  #jan{
+    margin-top: 120px;
+    margin-left: 50px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #take {
+    font-size: 30px;
+  }
+
+  #nairobi {
+    font-size: 20px;
+  }
+
+  #through {
+    font-size: 50px;
+  }
+  #booklet{
+    width: 95%;
+    height: 60%;
+    /* border-radius: 500px; */
+    margin-top: 0px;
+  }
+  #landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(253, 192, 39);
+  }
+  #jan{
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1030px) {
+  #take {
+    font-size: 50px;
+  }
+
+  #nairobi {
+    font-size: 35px;
+  }
+
+  #through {
+    font-size: 90px;
+  }
+  #landing {
+    position: relative;
+    height: 100vh;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(253, 192, 39);
+  }
+  #booklet{
+    width: 800px;
+    height: 1050px;
+    border-radius: 500px;
+    margin-top: 70px;
+  }
+  #jan{
+    margin-top: 100px;
+    /* margin-left: 50px; */
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1031px) {
+  #take {
+    font-size: 55px;
+  }
+
+  #nairobi {
+    font-size: 40px;
+  }
+
+  #through {
+    font-size: 100px;
+  }
+  #landing {
+position: relative;
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+background-color: rgb(253, 192, 39);
+}
+#booklet{
+width: 800px;
+height: 1050px;
+border-radius: 500px;
+margin-top: 70px;
+}
+#jan{
+margin-top: 100px;
+margin-left: 50px;
+}
+}
+
+@media (max-width: 350px) {
+  #get {
+    height: 250px;  /* Reduce height for small screens */
+    margin-top: 30px;
+  }
+
+  #get h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  #get h3 {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #view {
+    width: 70%;
+    height: 60px;
+    margin-left: 20%; /* Center the button */
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 18px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #get {
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  #get h1 {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  #get h3 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  #view {
+    width: 250px;
+    height: 70px;
+    margin-left: 100px;  /* Center the button */
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  #view a {
+    font-size: 22px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #get {
+    height: 320px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+  #get h3 {
+    font-size: 22px;
+    margin-top: 70px;
+  }
+
+  #view {
+    width: 270px;
+    height: 75px;
+    margin-left: 150px;  /* Center the button */
+    font-size: 32px;
+    margin-top: 45px;
+  }
+
+  #view a {
+    font-size: 24px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 200px;  /* Center the button */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 26px;
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1041px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 750px;  /* Position the button to the right for large screens */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  #get {
+    height: 250px;  /* Reduce height for small screens */
+    margin-top: 30px;
+  }
+
+  #get h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  #get h3 {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #view {
+    width: 220px;
+    height: 60px;
+    margin-left: 50px; /* Center the button */
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  #view a {
+    font-size: 18px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #get {
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  #get h1 {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  #get h3 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  #view {
+    width: 250px;
+    height: 70px;
+    margin-left: 100px;  /* Center the button */
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  #view a {
+    font-size: 22px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #get {
+    height: 320px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+  #get h3 {
+    font-size: 22px;
+    margin-top: 70px;
+  }
+
+  #view {
+    width: 270px;
+    height: 75px;
+    margin-left: 150px;  /* Center the button */
+    font-size: 32px;
+    margin-top: 45px;
+  }
+
+  #view a {
+    font-size: 24px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 200px;  /* Center the button */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 26px;
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1041px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 750px;  /* Position the button to the right for large screens */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  #footer {
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px;
+  }
+
+  #menu h3 {
+    font-size: 25px;
+  }
+
+  #menu p {
+    font-size: 18px;
+  }
+
+  #finish {
+    width: 200px;
+    height: 150px;
+  }
+
+  #media {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-container {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+
+  button {
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #menu h3 {
+    font-size: 30px;
+  }
+
+  #menu p {
+    font-size: 22px;
+  }
+
+  #finish {
+    width: 220px;
+    height: 180px;
+  }
+
+  #media {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-container {
+    width: 85%;
+    margin-top: 70px;
+  }
+
+  input[type="email"] {
+    width: 90%;
+  }
+
+  button {
+    width: 50%;
+    font-size: 15px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #footer {
+    flex-direction: row;
+    height: 400px;
+  }
+
+  #menu h3 {
+    font-size: 35px;
+  }
+
+  #menu p {
+    font-size: 25px;
+  }
+
+  #finish {
+    width: 250px;
+    height: 200px;
+  }
+
+  #media {
+    gap: 10%;
+  }
+
+  .form-container {
+    width: 75%;
+    margin-top: 80px;
+  }
+
+  input[type="email"] {
+    width: 90%;
+  }
+
+  button {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #footer {
+    flex-direction: row;
+    height: 400px;
+  }
+
+  #menu h3 {
+    font-size: 36px;
+  }
+
+  #menu p {
+    font-size: 28px;
+  }
+
+  #finish {
+    width: 260px;
+    height: 220px;
+  }
+
+  #media {
+    gap: 12%;
+  }
+
+  .form-container {
+    width: 70%;
+    margin-top: 100px;
+  }
+
+  input[type="email"] {
+    width: 80%;
+  }
+
+  button {
+    width: 40%;
+    font-size: 18px;
+  }
+}
+

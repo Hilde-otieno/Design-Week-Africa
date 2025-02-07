@@ -1,0 +1,613 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  /* padding: 10px 20px; */
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  color: rgb(253, 192, 39);
+  font-size: 20px;
+}
+#navbar .nav-item {
+  color: white; /* Set text color to yellow */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+#logo {
+  width: 100px;
+  height: 80px;
+  margin-top: 2.5px;
+  margin-left: 10px;
+  /* object-fit: cover; */
+}
+
+
+/* Styling for navbar links */
+.nav-item {
+  cursor: pointer;
+  /* padding: 10px 15px; */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
+  font-size: 16px; /* Font size */
+  transition: all 0.3s ease; /* Smooth transition for color and background */
+}
+
+/* Hover effect for nav items */
+.nav-item:hover {
+  color: white; /* Text color change on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+}
+
+/* Active link styling */
+.nav-item.active {
+  background-color: rgb(245, 240, 65);
+  color: black;
+  font-weight: bold;
+}
+
+/* Flex container for main navigation items */
+#nav {
+  display: flex;
+  gap: 4%;
+  margin-left: 750px;
+  color: rgb(253, 192, 39);
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Flex container for additional navigation items */
+#nav2 {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* Styling for dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: rgb(253, 192, 39);
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(107, 179, 55);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show dropdown content when hovering over dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: rgb(253, 192, 39); /* Subtle background on hover */
+}
+
+#nai{
+  font-size: 45px;
+  /* color: rgb(107, 179, 55); */
+}
+/* Landing Section */
+#landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(253, 192, 39);
+}
+
+/* Background Blur Layer */
+#background-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('Images/arrive.jpeg'); /* Background Image */
+        background-size: cover; /* Ensure it covers the entire screen */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent repeating */
+        z-index: -1; /* Push behind content */
+    }
+
+
+/* Content Section */
+#page {
+    text-align: center;
+    color: white;
+    background: rgba(16, 17, 0, 0.6); 
+    padding: 5px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); */
+    width: 100%;
+    height: 100%;
+}
+
+#africa{
+    font-size: 20px;
+    line-height: 2rem;
+    margin-top: -20px;
+
+
+}
+#take {
+  font-size: 50px;
+  margin-bottom: 0px; /* No space below #take */
+}
+
+#nairobi {
+  padding-bottom: 0px; /* No space below #nairobi */
+  font-size: 35px;
+  margin-top: 5px; /* Minimal space above #nairobi */
+}
+
+#through {
+  font-size: 90px;
+  color: rgb(99, 165, 55);
+  margin-top: 0px; /* Minimal space above #through */
+  margin-bottom: 5px; /* Minimal space below #through */
+}
+
+#booklet{
+  width: 800px;
+  height: 1050px;
+  border-radius: 500px;
+  margin-top: 70px;
+}
+#jan{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+
+  
+  .dropdown-btn {
+    cursor: pointer;
+    /* padding: 10px; */
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+    z-index: 1;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Nested dropdown styles */
+  
+  
+  
+  /* Hover effects for dropdown items */
+  .dropdown-content p, .nested-content p {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .dropdown-content p:hover, .nested-content p:hover {
+    background-color: rgb(107, 179, 55);
+  }
+  #welcome{
+    font-size: 60px;
+    color: rgb(107, 179, 55);
+}
+
+#join{
+    font-size: 24px;
+    line-height: 2rem;
+}
+#main{
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  #seat{
+    display: flex;
+    gap: 4%;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+#people{
+    width: 800px;
+    height: 550px;
+    margin-left: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+#desc{
+    width: 80px;
+    height: 80px;
+  }
+  
+  #brill{
+    display: flex;
+    gap: 5%;
+    margin-top: 50px;
+  }
+  #speak{
+    display: block;
+}
+
+#speaker{
+    display: flex;
+    width: 750px;
+    gap: 5%;
+    margin-left: 50PX;
+}
+#speaking{
+    display: block;
+}
+#drive{
+    line-height: 2rem;
+    font-size: 24px;
+}  
+#dak{
+  display: flex;
+  gap: 15%;
+  width: 98%;
+  margin-top: 50px;
+  margin-left: 1%;
+}
+#idak{
+  width: 400px;
+  height: 280px;
+}
+#yas{
+    width: 120px;
+    height: 40px;
+    margin-top: 25px;
+}
+
+/* Styling the advert form container */
+#advert {
+    width: 100%;  /* Ensure the advert form container takes full width of its parent */
+    max-width: 800px;  /* Set a maximum width to prevent the form from stretching too much */
+    margin: 0 auto;  /* Center the form horizontally */
+    padding: 20px;  /* Add some padding inside the form */
+    height: 600px;
+    background-color: rgb(253, 192, 39);  /* Light background color */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow for better visual appeal */
+    box-sizing: border-box;  /* Ensure padding is included in width */
+}
+
+/* Styling input and textarea fields inside the advert form */
+#advert input,
+#advert textarea {
+    width: 100%;  /* Make the input fields take up the full width of the form container */
+    padding: 10px;  /* Add padding inside the inputs */
+    margin-bottom: 20px;  /* Space between fields */
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 4px;  /* Rounded corners for inputs */
+    font-size: 14px;  /* Consistent font size */
+    box-sizing: border-box;  /* Ensure padding and border are included in the width */
+}
+
+/* Styling the textarea field inside the advert form */
+#advert textarea {
+    height: 120px;  /* Set height for the textarea */
+    resize: vertical;  /* Allow the textarea to be resized vertically */
+}
+
+/* Button styling for the advert form */
+#advert button {
+    width: 100%;  /* Make the button take up the full width of the form container */
+    padding: 12px;  /* Add padding inside the button */
+    background-color: rgb(107, 179, 55);  /* Green background color */
+    color: white;  /* White text */
+    font-size: 16px;  /* Font size */
+    border: none;  /* Remove the border */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+}
+
+/* Button hover effect for the advert form */
+#advert button:hover {
+    background-color: rgb(85, 140, 43);  /* Darker green when hovered */
+}
+
+/* Parent container to center the advert form */
+#advert-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Horizontally center the form */
+    align-items: center;
+    background-color: rgb(107, 179, 55);  /* Optional background for the parent container */
+    padding: 40px 0;  /* Padding for spacing */
+}
+
+ #reg{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 19px;
+ }
+
+ /* Styling the form container for #speaks */
+#speaks .form-container {
+    width: 800px;  /* Set the width of the form */
+    height: 600px;
+    margin: 0 auto;  /* Center the form horizontally */
+    padding: 20px;  /* Add some padding inside the form */
+    background-color: rgb(253, 192, 39);  /* Light gray background color */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow for better visual appeal */
+}
+
+/* Styling input and textarea fields inside #speaks form */
+#speaks .form-container input,
+#speaks .form-container textarea {
+    width: 700px;  /* Make the input fields take the full width of the form */
+    padding: 10px;  /* Add padding inside the inputs */
+    margin-bottom: 20px;  /* Space between fields */
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 4px;  /* Rounded corners for inputs */
+    font-size: 19px;  /* Make the font size consistent */
+    box-sizing: border-box;  /* Ensure padding and border are included in the width */
+}
+
+/* Styling the textarea field inside #speaks form */
+#speaks .form-container textarea {
+    height: 120px;  /* Set height for the textarea */
+    resize: vertical;  /* Allow the textarea to be resized vertically */
+}
+
+/* Button styling for #speaks form */
+#speaks .form-container button {
+    width: 30%;  /* Full width */
+    padding: 12px;  /* Padding inside button */
+    background-color: rgb(107, 179, 55);  /* Green background */
+    color: white;  /* White text */
+    font-size: 22px;  /* Font size */
+    border: none;  /* Remove border */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect for #speaks form */
+#speaks .form-container button:hover {
+    background-color: black;  /* Darker green when hovered */
+}
+
+ 
+  #get {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;  /* Full width of the container */
+    height: 350px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    
+    /* Background Image with Overlay */
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Black overlay with transparency */
+      url('Images/design.jpeg');  /* Your background image */
+    background-size: cover;  /* Ensures the image covers the area without stretching */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+  }
+  
+  /* Optional: Add a yellow triangle effect at the bottom */
+  #get::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;  /* Makes the triangle span the full width */
+    height: 0;
+    border-left: 0 solid transparent;  /* Not needed anymore */
+    border-right: 0 solid transparent;  /* Not needed anymore */
+    border-bottom: 350px solid rgba(255, 255, 0, 0.6); /* Yellow triangle */
+  }
+  
+  /* Style for the text inside #get */
+  #get h3 {
+    font-size: 24px;
+    color: black;  /* White text color */
+    margin: 0;
+    margin-top: 80px;
+    z-index: 1;  /* Ensure the text is on top of the background */
+    position: relative;  /* Allow the z-index to work */
+  }
+  
+  #get h1 {
+    font-size: 45px;
+    color: black;  /* White text color */
+    margin-bottom: 80px;
+    z-index: 1;  /* Ensure the text is on top of the background */
+    position: relative;  /* Allow the z-index to work */
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Text color */
+    border-radius: 20px;
+    margin-left: 750px;
+    font-size: 35px;
+    margin-top: 50px;
+    background-color: rgb(253, 192, 39); /* Button background color */
+    border: none; /* Remove default button border */
+    text-align: center;
+    cursor: pointer; /* Make the button clickable */
+  }
+  
+  #view a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color to white */
+    display: block; /* Make the link a block element */
+    height: 100%; /* Make the link fill the entire button */
+    width: 100%; /* Make the link fill the entire button */
+    line-height: 30px; /* Vertically center the text */
+    margin-top: 15px;
+  }
+  
+  /* Hover effect for the button */
+  #view:hover {
+    background-color: rgb(107, 179, 55); /* Change to a darker blue when hovered */
+  }
+  
+  /* Optional: You can also change the link color on hover */
+  #view:hover a {
+    color: white; /* Keep the text color white, but you could change it if you want */
+  }
+  
+
+  #footer {
+    margin-top: 100px;
+    display: flex;
+    gap: 11%;
+    background-color: rgb(253, 192, 39);
+    position: relative; /* Ensure the pseudo-element can be positioned correctly */
+    background-size: cover; /* Ensures the background image covers the entire footer */
+    background-position: center; /* Centers the image within the footer */
+    height: 400px; /* Adjust this as needed for the footer height */
+    z-index: 0; /* Ensures content stays above the overlay */
+  }
+  
+  #footer::before {
+    content: ''; /* Adds a pseudo-element for the background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherits the background image from the parent */
+    background-size: cover; /* Ensures the background image is fully covered */
+    background-position: center; /* Centers the image within the footer */
+  }
+  
+  #footer::after {
+    content: ''; /* Adds a white overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 224, 20, 0.5); /* White overlay with 50% opacity */
+    z-index: -1; /* Ensures the overlay stays behind the content but above the blurred image */
+  }
+  
+  #foot {
+    margin-left: 20px;
+    position: relative; /* Ensures content stays above the overlay */
+    z-index: 1; /* Keeps the content above the overlay */
+    color: black; /* Ensures the text is clearly visible (black text on a light background) */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); Adds a shadow to text for better readability */
+  }
+  
+  #finish {
+    width: 250px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 20px;
+  }
+  
+  #menu h3{
+    font-size: 40px;
+  }
+  #menu p{
+    font-size: 25px;
+  }
+  #facebook {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  
+  #media {
+    display: flex;
+    gap: 3%;
+  }
+  #schools{
+    display: block;
+  }
+  #menu{
+    margin-top: 50px
+  }
+  .subscribe-form {
+    background-color: rgb(107, 179, 55);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 180px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#sub {
+    width: auto;  /* This allows the button to shrink to its content */
+    padding: 10px 20px;  /* Adds horizontal padding */
+    background-color: yellow;
+    color: black;
+    border: none;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;  /* Aligns button to the left */
+}
+
+#sub:hover {
+    background-color: rgb(10, 10, 53);
+    color: white;
+}

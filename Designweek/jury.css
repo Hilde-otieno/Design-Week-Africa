@@ -1,0 +1,515 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100%;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  /* padding: 10px 20px; */
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  color: rgb(253, 192, 39);
+  font-size: 20px;
+}
+#navbar .nav-item {
+  color: white; /* Set text color to yellow */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+#logo {
+  width: 100px;
+  height: 80px;
+  margin-top: 2.5px;
+  margin-left: 10px;
+  /* object-fit: cover; */
+}
+
+  
+  /* Styling for navbar links */
+  .nav-item {
+    cursor: pointer;
+    /* padding: 10px 15px; */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+  }
+  
+  /* Hover effect for nav items */
+  .nav-item:hover {
+    color: white; /* Text color change on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+  }
+  
+  /* Active link styling */
+  .nav-item.active {
+    background-color: rgb(245, 240, 65);
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Flex container for main navigation items */
+  #nav {
+    display: flex;
+    gap: 4%;
+    margin-left: 750px;
+    color: rgb(253, 192, 39);
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  
+  /* Flex container for additional navigation items */
+  #nav2 {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  /* Styling for dropdown menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgb(253, 192, 39);
+  
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(107, 179, 55);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Show dropdown content when hovering over dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Styling for dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Subtle background on hover */
+  }
+  
+  #nai{
+    font-size: 45px;
+    /* color: rgb(107, 179, 55); */
+  } 
+  
+/* Landing Section */
+#landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(253, 192, 39);
+}
+
+#background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/arrive.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#page {
+    text-align: center;
+    color: white;
+    background: rgba(16, 17, 0, 0.6);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+#take {
+  font-size: 50px;
+  margin-bottom: 0px; /* No space below #take */
+}
+
+#nairobi {
+  padding-bottom: 0px; /* No space below #nairobi */
+  font-size: 35px;
+  margin-top: 5px; /* Minimal space above #nairobi */
+}
+
+#through {
+  font-size: 90px;
+  color: rgb(99, 165, 55);
+  margin-top: 0px; /* Minimal space above #through */
+  margin-bottom: 5px; /* Minimal space below #through */
+}
+
+#booklet{
+  width: 800px;
+  height: 1050px;
+  border-radius: 500px;
+  margin-top: 70px;
+}
+  #jan{
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  
+
+/* Awards Form Section */
+.award-form-container {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.award-form-section {
+    flex: 2;
+    width: 500px;
+}
+
+.award-key-dates {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.award-form-container h3 {
+    margin-top: 0;
+}
+
+.award-form-container input, 
+.award-form-container select, 
+.award-form-container textarea, 
+.award-form-container button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.award-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.award-form-container button:hover {
+    background-color: #45a049;
+}
+
+.award-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.award-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.award-checkbox-container input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.award-checkbox-container label {
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.award-key-dates strong {
+    color: red;
+}
+
+#award-sub {
+    width: 250px;
+}
+
+
+/* Popup container */
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Hidden class to hide the popup */
+.hidden {
+    display: none;
+}
+
+/* Close button */
+.close-btn {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+
+#get {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;  /* Full width of the container */
+    height: 350px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    
+    /* Background Image with Overlay */
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Black overlay with transparency */
+      url('Images/design.jpeg');  /* Your background image */
+    background-size: cover;  /* Ensures the image covers the area without stretching */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+  }
+  
+  /* Optional: Add a yellow triangle effect at the bottom */
+  #get::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;  /* Makes the triangle span the full width */
+    height: 0;
+    border-left: 0 solid transparent;  /* Not needed anymore */
+    border-right: 0 solid transparent;  /* Not needed anymore */
+    border-bottom: 350px solid rgba(255, 255, 0, 0.6); /* Yellow triangle */
+  }
+  
+  /* Style for the text inside #get */
+  #get h3 {
+    font-size: 24px;
+    color: black;  /* White text color */
+    margin: 0;
+    margin-top: 80px;
+    z-index: 1;  /* Ensure the text is on top of the background */
+    position: relative;  /* Allow the z-index to work */
+  }
+  
+  #get h1 {
+    font-size: 45px;
+    color: black;  /* White text color */
+    margin-bottom: 80px;
+    z-index: 1;  /* Ensure the text is on top of the background */
+    position: relative;  /* Allow the z-index to work */
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Text color */
+    border-radius: 20px;
+    margin-left: 750px;
+    font-size: 35px;
+    margin-top: 50px;
+    background-color: rgb(253, 192, 39); /* Button background color */
+    border: none; /* Remove default button border */
+    text-align: center;
+    cursor: pointer; /* Make the button clickable */
+  }
+  
+  #view a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color to white */
+    display: block; /* Make the link a block element */
+    height: 100%; /* Make the link fill the entire button */
+    width: 100%; /* Make the link fill the entire button */
+    line-height: 30px; /* Vertically center the text */
+    margin-top: 15px;
+  }
+  
+  /* Hover effect for the button */
+  #view:hover {
+    background-color: rgb(107, 179, 55); /* Change to a darker blue when hovered */
+  }
+  
+  /* Optional: You can also change the link color on hover */
+  #view:hover a {
+    color: white; /* Keep the text color white, but you could change it if you want */
+  }
+  
+
+  #footer {
+    margin-top: 100px;
+    display: flex;
+    gap: 11%;
+    background-color: rgb(253, 192, 39);
+    position: relative; /* Ensure the pseudo-element can be positioned correctly */
+    background-size: cover; /* Ensures the background image covers the entire footer */
+    background-position: center; /* Centers the image within the footer */
+    height: 400px; /* Adjust this as needed for the footer height */
+    z-index: 0; /* Ensures content stays above the overlay */
+  }
+  
+  #footer::before {
+    content: ''; /* Adds a pseudo-element for the background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherits the background image from the parent */
+    background-size: cover; /* Ensures the background image is fully covered */
+    background-position: center; /* Centers the image within the footer */
+  }
+  
+  #footer::after {
+    content: ''; /* Adds a white overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 224, 20, 0.5); /* White overlay with 50% opacity */
+    z-index: -1; /* Ensures the overlay stays behind the content but above the blurred image */
+  }
+  
+  #foot {
+    margin-left: 20px;
+    position: relative; /* Ensures content stays above the overlay */
+    z-index: 1; /* Keeps the content above the overlay */
+    color: black; /* Ensures the text is clearly visible (black text on a light background) */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); Adds a shadow to text for better readability */
+  }
+  
+  #finish {
+    width: 250px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 20px;
+  }
+  
+  #menu h3{
+    font-size: 40px;
+  }
+  #menu p{
+    font-size: 25px;
+  }
+  #facebook {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  
+  #media {
+    display: flex;
+    gap: 3%;
+  }
+  #schools{
+    display: block;
+  }
+  #menu{
+    margin-top: 50px
+  }
+  .form-container {
+    background-color: rgb(107, 179, 55);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 180px;
+    margin-top: 100px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 40%;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: rgb(10, 10, 53);
+    color: white;
+  }
+ 
+  
