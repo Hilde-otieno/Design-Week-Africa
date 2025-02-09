@@ -484,4 +484,1530 @@ body {
     color: white;
   }
  
+  @media screen and (max-width:350px){
+    body {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: relative;
+      height: 100%;
+  }
+
+}
+  @media screen and (min-width: 351px) and (max-width: 580px) {
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+  }
+  }
+
+  @media screen and (min-width: 581px) and (max-width: 740px) {
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+  }
+  }
+
+  @media screen and (min-width: 741px) and (max-width: 1040px) {
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+  }
+  }
+
+  @media screen and  (min-width: 1041px) {
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+  }
+  }
+  /* 350px and below */
+@media screen and (max-width: 350px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 1%;
+    color: white;
+    width: 100%;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+    margin-left: -72%;
+  }
+
+  #nav {
+    display: none; /* Hide navigation links initially */
+    flex-direction: column;
+    gap: 1%;
+    margin-left: -40%;
+    background-color: black; /* Ensure background is visible */
+    width: 100%; /* Ensure nav items take full width on smaller screens */
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    color: white; /* Ensure nav items text is white */
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    /* z-index: 1000; */
+    width: 100%;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  /* Change color on hover for smaller screens */
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Dropdown positioning fix */
+  .dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position it right below the dropdown button */
+    left: 0;
+    margin-left: -80%;
+    width: 100%; /* Make dropdown take full width of the navbar */
+  }
+
+  .dropdown-content a {
+    color: black; /* Ensure text is black inside dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(253, 192, 39); /* Highlight on hover */
+  }
+
+  /* Show dropdown content when hovering */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+ 
+  /* For screens between 351px and 580px */
+  @media screen and (min-width: 351px) and (max-width: 580px) {
+    #navbar {
+      flex-direction: column;
+      height: auto;
+      gap: 1%;
+      color: white;
+      width: 100%;
+    }
   
+    #logo {
+      margin-left: 0;
+      width: 80px;
+      height: 80px;
+      margin-left: -72%;
+    }
+  
+    #nav {
+      display: none; /* Hide navigation links initially */
+      flex-direction: column;
+      gap: 1%;
+      margin-left: -60%;
+      background-color: black; /* Ensure background is visible */
+      width: 100%; /* Ensure nav items take full width on smaller screens */
+      text-align: center; /* Center-align nav items */
+    }
+  
+    .nav-item {
+      color: white; /* Ensure nav items text is white */
+      padding: 10px 15px;
+      font-size: 10px;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      /* z-index: 1000; */
+      width: 100%;
+    }
+  
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+  
+    /* Change color on hover for smaller screens */
+    .nav-item:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  
+    /* Dropdown positioning fix */
+    .dropdown-content {
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      z-index: 1;
+      top: 100%; /* Position it right below the dropdown button */
+      left: 0;
+      margin-left: -80%;
+      width: 100%; /* Make dropdown take full width of the navbar */
+    }
+  
+    .dropdown-content a {
+      color: black; /* Ensure text is black inside dropdown */
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+  
+    .dropdown-content a:hover {
+      background-color: rgb(253, 192, 39); /* Highlight on hover */
+    }
+  
+    /* Show dropdown content when hovering */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  /* For screens between 581px and 780px */
+  @media screen and (min-width: 581px) and (max-width: 740px) {
+    #navbar {
+      flex-direction: column;
+      height: auto;
+      gap: 1%;
+      color: white;
+      width: 100%;
+    }
+  
+    #logo {
+      margin-left: 0;
+      width: 80px;
+      height: 80px;
+      margin-left: -72%;
+    }
+  
+    #nav {
+      display: none; /* Hide navigation links initially */
+      flex-direction: column;
+      gap: 1%;
+      margin-left: -60%;
+      background-color: black; /* Ensure background is visible */
+      width: 100%; /* Ensure nav items take full width on smaller screens */
+      text-align: center; /* Center-align nav items */
+    }
+  
+    .nav-item {
+      color: white; /* Ensure nav items text is white */
+      padding: 10px 15px;
+      font-size: 10px;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      /* z-index: 1000; */
+      width: 100%;
+    }
+  
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+  
+    /* Change color on hover for smaller screens */
+    .nav-item:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  
+    /* Dropdown positioning fix */
+    .dropdown-content {
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      z-index: 1;
+      top: 100%; /* Position it right below the dropdown button */
+      left: 0;
+      margin-left: -80%;
+      width: 100%; /* Make dropdown take full width of the navbar */
+    }
+  
+    .dropdown-content a {
+      color: black; /* Ensure text is black inside dropdown */
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+  
+    .dropdown-content a:hover {
+      background-color: rgb(253, 192, 39); /* Highlight on hover */
+    }
+  
+    /* Show dropdown content when hovering */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 741px) and (max-width: 1030px) {
+    #navbar {
+      display: flex;
+      align-items: center;
+      /* padding: 10px 20px; */
+      position: fixed;
+      background-color: black;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      z-index: 1000;
+      color: rgb(253, 192, 39);
+      font-size: 20px;
+    }
+    #navbar .nav-item {
+      color: white; /* Set text color to yellow */
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    #logo {
+      width: 100px;
+      height: 80px;
+      margin-top: 2.5px;
+      margin-left: 10px;
+      /* object-fit: cover; */
+    }
+    
+    /* Styling for navbar links */
+    .nav-item {
+      cursor: pointer;
+      /* padding: 10px 15px; */
+      text-decoration: none; /* Remove underline */
+      color: black; /* Text color */
+      font-size: 16px; /* Font size */
+      transition: all 0.3s ease; /* Smooth transition for color and background */
+    }
+    
+    /* Hover effect for nav items */
+    .nav-item:hover {
+      color: white; /* Text color change on hover */
+      background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+    }
+    
+    /* Active link styling */
+    .nav-item.active {
+      background-color: rgb(253, 192, 39);
+      color: black;
+      font-weight: bold;
+    }
+    
+    /* Flex container for main navigation items */
+    #nav {
+      display: flex;
+      gap: 4%;
+      margin-left: 5%;
+      color: rgb(253, 192, 39);
+      align-items: center;
+      font-size: 14px;
+    }
+    
+    /* Flex container for additional navigation items */
+    #nav2 {
+      display: flex;
+      gap: 10px;
+      font-size: 16px;
+    }
+    
+    /* Styling for dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      color: rgb(253, 192, 39);
+    
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    
+    /* Show dropdown content when hovering over dropdown */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Styling for dropdown links */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Hover effect for dropdown items */
+    .dropdown-content a:hover {
+      background-color: rgb(253, 192, 39); /* Subtle background on hover */
+    }
+  }
+  
+  /* For screens above 1041px */
+  @media screen and (min-width: 1031px) {
+    #navbar {
+      display: flex;
+      align-items: center;
+      /* padding: 10px 20px; */
+      position: fixed;
+      background-color: black;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      z-index: 1000;
+      color: rgb(253, 192, 39);
+      font-size: 20px;
+    }
+    #navbar .nav-item {
+      color: white; /* Set text color to yellow */
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    #logo {
+      width: 100px;
+      height: 80px;
+      margin-top: 2.5px;
+      margin-left: 10px;
+      /* object-fit: cover; */
+    }
+    
+    /* Styling for navbar links */
+    .nav-item {
+      cursor: pointer;
+      /* padding: 10px 15px; */
+      text-decoration: none; /* Remove underline */
+      color: black; /* Text color */
+      font-size: 16px; /* Font size */
+      transition: all 0.3s ease; /* Smooth transition for color and background */
+    }
+    
+    /* Hover effect for nav items */
+    .nav-item:hover {
+      color: white; /* Text color change on hover */
+      background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+    }
+    
+    /* Active link styling */
+    .nav-item.active {
+      background-color: rgb(253, 192, 39);
+      color: black;
+      font-weight: bold;
+    }
+    
+    /* Flex container for main navigation items */
+    #nav {
+      display: flex;
+      gap: 4%;
+      margin-left: 750px;
+      color: rgb(253, 192, 39);
+      align-items: center;
+      font-size: 18px;
+    }
+    
+    /* Flex container for additional navigation items */
+    #nav2 {
+      display: flex;
+      gap: 10px;
+      font-size: 16px;
+    }
+    
+    /* Styling for dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      color: rgb(253, 192, 39);
+    
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    
+    /* Show dropdown content when hovering over dropdown */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Styling for dropdown links */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Hover effect for dropdown items */
+    .dropdown-content a:hover {
+      background-color: rgb(253, 192, 39); /* Subtle background on hover */
+    }
+  }
+
+
+  @media (max-width: 350px) {
+    #take {
+      font-size: 30px;
+    }
+  
+    #nairobi {
+      font-size: 20px;
+    }
+  
+    #through {
+      font-size: 50px;
+    }
+    #booklet{
+      width: 95%;
+      height: 60%;
+      /* border-radius: 500px; */
+      margin-top: 0px;
+    }
+    #landing {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: rgb(253, 192, 39);
+    }
+    #jan{
+      margin-top: 150px;
+      margin-left: 50px;
+    }
+  }
+  
+  /* 351px - 580px (Small mobile screens and small tablets) */
+  @media (min-width: 351px) and (max-width: 580px) {
+    #take {
+      font-size: 30px;
+    }
+  
+    #nairobi {
+      font-size: 20px;
+    }
+  
+    #through {
+      font-size: 50px;
+    }
+    #booklet{
+      width: 80%;
+      height: 50%;
+      /* border-radius: 500px; */
+      margin-top: 0px;
+    }
+    #landing {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: rgb(253, 192, 39);
+    }
+    #jan{
+      margin-top: 120px;
+      margin-left: 50px;
+    }
+  }
+  
+  /* 581px - 780px (Medium mobile screens and larger tablets) */
+  @media (min-width: 581px) and (max-width: 740px) {
+    #take {
+      font-size: 30px;
+    }
+  
+    #nairobi {
+      font-size: 20px;
+    }
+  
+    #through {
+      font-size: 50px;
+    }
+    #booklet{
+      width: 95%;
+      height: 60%;
+      /* border-radius: 500px; */
+      margin-top: 0px;
+    }
+    #landing {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: rgb(253, 192, 39);
+    }
+    #jan{
+      margin-top: 150px;
+      margin-left: 50px;
+    }
+  }
+  
+  /* 781px - 1040px (Small desktop screens) */
+  @media (min-width: 741px) and (max-width: 1030px) {
+    #take {
+      font-size: 50px;
+    }
+  
+    #nairobi {
+      font-size: 35px;
+    }
+  
+    #through {
+      font-size: 90px;
+    }
+    #landing {
+      position: relative;
+      height: 100vh;
+      width: 150%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: rgb(253, 192, 39);
+    }
+    #booklet{
+      width: 800px;
+      height: 1050px;
+      border-radius: 500px;
+      margin-top: 70px;
+    }
+    #jan{
+      margin-top: 100px;
+      /* margin-left: 50px; */
+    }
+  }
+  
+  /* 1041px and above (Large desktop screens) */
+  @media (min-width: 1031px) {
+    #take {
+      font-size: 55px;
+    }
+  
+    #nairobi {
+      font-size: 40px;
+    }
+  
+    #through {
+      font-size: 100px;
+    }
+    #landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(253, 192, 39);
+}
+#booklet{
+  width: 800px;
+  height: 1050px;
+  border-radius: 500px;
+  margin-top: 70px;
+}
+#jan{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+  }
+
+  @media (max-width: 350px) {
+    #main {
+      width: 90%;  /* Adjust the width to fit smaller screens */
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  
+    #seat {
+      display: block;  /* Stack the items vertically */
+      gap: 5%;
+    }
+  
+    #people {
+      width: 90%;  /* Adjust width for smaller screen */
+      height: auto;  /* Let height adjust to content */
+      margin-left: 2%;
+    }
+  
+    #welcome {
+      font-size: 30px;
+    }
+  
+    #pres {
+      font-size: 20px;
+    }
+  
+    #join {
+      font-size: 18px;
+    }
+  }
+  
+  /* 351px - 580px (Small mobile screens and small tablets) */
+  @media (min-width: 351px) and (max-width: 580px) {
+    #main {
+      width: 85%;  /* More responsive on small devices */
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+  
+    #seat {
+      display: block;  /* Stack the items vertically */
+      gap: 10%;
+    }
+  
+    #people {
+      width: 85%;
+      height: auto;  /* Let height adjust */
+      margin-left: 5%;
+    }
+  
+    #welcome {
+      font-size: 45px;
+    }
+  
+    #pres {
+      font-size: 30px;
+    }
+  
+    #join {
+      font-size: 22px;
+    }
+  }
+  
+  /* 581px - 780px (Medium mobile screens and larger tablets) */
+  @media (min-width: 581px) and (max-width: 740px) {
+    #main {
+      width: 75%;  /* Adjust width to fit better */
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+  
+    #seat {
+      display: flex;
+      gap: 10%;
+    }
+  
+    #people {
+      width: 80%;  /* Adjust width */
+      height: 700px;  /* Fixed height for balance */
+    }
+  
+    #welcome {
+      font-size: 50px;
+    }
+  
+    #pres {
+      font-size: 32px;
+    }
+  
+    #join {
+      font-size: 24px;
+    }
+  }
+  
+  /* 781px - 1040px (Small desktop screens) */
+  @media (min-width: 741px) and (max-width: 1040px) {
+    #main {
+      width: 60%;  /* Adjust for medium screens */
+      margin-top: 50px;
+      margin-left: 100px;
+    }
+  
+    #seat {
+      display: flex;
+      gap: 14%;
+    }
+  
+    #people {
+      width: 70%;
+      height: 750px;
+    }
+  
+    #welcome {
+      font-size: 55px;
+    }
+  
+    #pres {
+      font-size: 35px;
+    }
+  
+    #join {
+      font-size: 25px;
+    }
+  }
+  
+  /* 1041px and above (Large desktop screens) */
+  @media (min-width: 1041px) {
+    #main {
+      width: 600px;  /* Full size for larger screens */
+      margin-top: 50px;
+      margin-left: 120px;
+    }
+  
+    #seat {
+      display: flex;
+      gap: 14%;
+    }
+  
+    #people {
+      width: 700px;
+      height: 800px;
+    }
+  
+    #welcome {
+      font-size: 60px;
+    }
+  
+    #pres {
+      font-size: 35px;
+    }
+  
+    #join {
+      font-size: 25px;
+    }
+  }
+
+/* 0px - 350px (Smallest mobile screens) */
+@media (max-width: 350px) {
+  #adv {
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 20px;
+  }
+
+  #adv h3 {
+    padding-top: 30px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  #adv p {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+
+  #photos {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #name {
+    width: 90%;
+    margin-left: 2%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #photo {
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+  }
+
+  #name p {
+    font-size: 14px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #adv {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 30px;
+  }
+
+  #adv h3 {
+    padding-top: 40px;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  #adv p {
+    font-size: 20px;
+    line-height: 1.8rem;
+  }
+
+  #photos {
+    display: block;
+    gap: 10%;
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  #name {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 2%;
+  }
+
+  #photo {
+    width: 100%;
+    height: 350px;
+  }
+
+  #name p {
+    font-size: 16px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #adv {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+  }
+
+  #adv h3 {
+    padding-top: 50px;
+    font-size: 26px;
+    margin-bottom: 45px;
+  }
+
+  #adv p {
+    font-size: 22px;
+    line-height: 1.8rem;
+  }
+
+  #photos {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  #name {
+    width: 45%;
+    height: 500px;
+    margin-top: 40px;
+  }
+
+  #photo {
+    width: 100%;
+    height: 400px;
+  }
+
+  #name p {
+    font-size: 18px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #adv {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 50px;
+  }
+
+  #adv h3 {
+    padding-top: 55px;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+
+  #adv p {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+
+  #photos {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    margin-left: 0;
+    height: 600px;
+  }
+
+  #name {
+    width: 30%;
+    height: 500px;
+    margin-top: 50px;
+  }
+
+  #photo {
+    width: 100%;
+    height: 400px;
+  }
+
+  #name p {
+    font-size: 20px;
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1041px) {
+  #adv {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+  }
+
+  #adv h3 {
+    padding-top: 60px;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  #adv p {
+    font-size: 25px;
+    line-height: 2rem;
+  }
+
+  #photos {
+    display: flex;
+    gap: 5%;
+    width: 90%;
+    margin-left: 5%;
+    height: 600px;
+  }
+
+  #name {
+    width: 350px;
+    height: 550px;
+    margin-top: 50px;
+  }
+
+  #photo {
+    width: 350px;
+    height: 400px;
+  }
+
+  #name p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 350px) {
+  #get {
+    height: 250px;  /* Reduce height for small screens */
+    margin-top: 30px;
+  }
+
+  #get h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  #get h3 {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #view {
+    width: 70%;
+    height: 60px;
+    margin-left: 20%; /* Center the button */
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 18px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #get {
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  #get h1 {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  #get h3 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  #view {
+    width: 250px;
+    height: 70px;
+    margin-left: 100px;  /* Center the button */
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  #view a {
+    font-size: 22px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #get {
+    height: 320px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+  #get h3 {
+    font-size: 22px;
+    margin-top: 70px;
+  }
+
+  #view {
+    width: 270px;
+    height: 75px;
+    margin-left: 150px;  /* Center the button */
+    font-size: 32px;
+    margin-top: 45px;
+  }
+
+  #view a {
+    font-size: 24px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 200px;  /* Center the button */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 26px;
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1041px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 750px;  /* Position the button to the right for large screens */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  #get {
+    height: 250px;  /* Reduce height for small screens */
+    margin-top: 30px;
+  }
+
+  #get h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  #get h3 {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #view {
+    width: 220px;
+    height: 60px;
+    margin-left: 50px; /* Center the button */
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  #view a {
+    font-size: 18px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #get {
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  #get h1 {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  #get h3 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  #view {
+    width: 250px;
+    height: 70px;
+    margin-left: 100px;  /* Center the button */
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  #view a {
+    font-size: 22px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #get {
+    height: 320px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+  #get h3 {
+    font-size: 22px;
+    margin-top: 70px;
+  }
+
+  #view {
+    width: 270px;
+    height: 75px;
+    margin-left: 150px;  /* Center the button */
+    font-size: 32px;
+    margin-top: 45px;
+  }
+
+  #view a {
+    font-size: 24px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 200px;  /* Center the button */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 26px;
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1041px) {
+  #get {
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  #get h1 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  #get h3 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  #view {
+    width: 300px;
+    height: 80px;
+    margin-left: 750px;  /* Position the button to the right for large screens */
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #view a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  #footer {
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px;
+  }
+
+  #menu h3 {
+    font-size: 25px;
+  }
+
+  #menu p {
+    font-size: 18px;
+  }
+
+  #finish {
+    width: 200px;
+    height: 150px;
+  }
+
+  #media {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-container {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+
+  button {
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  #footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #menu h3 {
+    font-size: 30px;
+  }
+
+  #menu p {
+    font-size: 22px;
+  }
+
+  #finish {
+    width: 220px;
+    height: 180px;
+  }
+
+  #media {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-container {
+    width: 85%;
+    margin-top: 70px;
+  }
+
+  input[type="email"] {
+    width: 90%;
+  }
+
+  button {
+    width: 50%;
+    font-size: 15px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 740px) {
+  #footer {
+    flex-direction: row;
+    height: 400px;
+  }
+
+  #menu h3 {
+    font-size: 35px;
+  }
+
+  #menu p {
+    font-size: 25px;
+  }
+
+  #finish {
+    width: 250px;
+    height: 200px;
+  }
+
+  #media {
+    gap: 10%;
+  }
+
+  .form-container {
+    width: 75%;
+    margin-top: 80px;
+  }
+
+  input[type="email"] {
+    width: 90%;
+  }
+
+  button {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #footer {
+    flex-direction: row;
+    height: 400px;
+  }
+
+  #menu h3 {
+    font-size: 36px;
+  }
+
+  #menu p {
+    font-size: 28px;
+  }
+
+  #finish {
+    width: 260px;
+    height: 220px;
+  }
+
+  #media {
+    gap: 12%;
+  }
+
+  .form-container {
+    width: 70%;
+    margin-top: 100px;
+  }
+
+  input[type="email"] {
+    width: 80%;
+  }
+
+  button {
+    width: 40%;
+    font-size: 18px;
+  }
+}
+

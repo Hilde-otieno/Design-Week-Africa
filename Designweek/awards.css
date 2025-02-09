@@ -1624,7 +1624,7 @@ button:hover {
   #landing {
     position: relative;
     height: 100vh;
-    width: 150%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1676,6 +1676,262 @@ margin-top: 70px;
 margin-top: 100px;
 margin-left: 50px;
 }
+}
+
+
+/* Default styles for .award-form-container */
+.award-form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.award-form-section {
+  width: 60%;
+}
+
+.award-key-dates {
+  width: 35%;
+}
+
+.award-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.award-form-section input[type="text"],
+.award-form-section select,
+.award-form-section input[type="email"],
+.award-form-section textarea,
+.award-form-section input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.award-form-section button {
+  width: 40%;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.award-form-section button:hover {
+  background-color: rgb(10, 10, 53);
+  color: white;
+}
+
+.award-key-dates h3 {
+  font-size: 20px;
+}
+
+.award-key-dates p {
+  font-size: 16px;
+}
+
+/* Media Queries */
+
+/* 0px - 350px (Small mobile screens) */
+@media (max-width: 350px) {
+  .award-form-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .award-form-section {
+    width:90%;
+  }
+
+  .award-key-dates {
+    width: 85%;
+  }
+
+  .award-form-section form {
+    gap: 10px;
+  }
+
+  .award-form-section input[type="text"],
+  .award-form-section select,
+  .award-form-section input[type="email"],
+  .award-form-section textarea {
+    width: 90%;
+  }
+
+  .award-form-section button {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .award-key-dates h3 {
+    font-size: 18px;
+  }
+
+  .award-key-dates p {
+    font-size: 14px;
+  }
+}
+
+/* 351px - 580px (Small mobile screens and small tablets) */
+@media (min-width: 351px) and (max-width: 580px) {
+  .award-form-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .award-form-section {
+    width: 90%;
+  }
+
+  .award-key-dates {
+    width: 90%;
+  }
+
+  .award-form-section form {
+    gap: 12px;
+  }
+
+  .award-form-section input[type="text"],
+  .award-form-section select,
+  .award-form-section input[type="email"],
+  .award-form-section textarea {
+    width: 100%;
+  }
+
+  .award-form-section button {
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .award-key-dates h3 {
+    font-size: 19px;
+  }
+
+  .award-key-dates p {
+    font-size: 15px;
+  }
+}
+
+/* 581px - 780px (Medium mobile screens and larger tablets) */
+@media (min-width: 581px) and (max-width: 780px) {
+  .award-form-container {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .award-form-section {
+    width: 60%;
+  }
+
+  .award-key-dates {
+    width: 35%;
+  }
+
+  .award-form-section form {
+    gap: 15px;
+  }
+
+  .award-form-section input[type="text"],
+  .award-form-section select,
+  .award-form-section input[type="email"],
+  .award-form-section textarea {
+    width: 100%;
+  }
+
+  .award-form-section button {
+    width: 40%;
+  }
+
+  .award-key-dates h3 {
+    font-size: 20px;
+  }
+
+  .award-key-dates p {
+    font-size: 16px;
+  }
+}
+
+/* 781px - 1040px (Small desktop screens) */
+@media (min-width: 781px) and (max-width: 1040px) {
+  .award-form-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .award-form-section {
+    width: 55%;
+  }
+
+  .award-key-dates {
+    width: 40%;
+  }
+
+  .award-form-section form {
+    gap: 18px;
+  }
+
+  .award-form-section input[type="text"],
+  .award-form-section select,
+  .award-form-section input[type="email"],
+  .award-form-section textarea {
+    width: 100%;
+  }
+
+  .award-form-section button {
+    width: 40%;
+  }
+
+  .award-key-dates h3 {
+    font-size: 22px;
+  }
+
+  .award-key-dates p {
+    font-size: 18px;
+  }
+}
+
+/* 1041px and above (Large desktop screens) */
+@media (min-width: 1041px) {
+  .award-form-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .award-form-section {
+    width: 60%;
+  }
+
+  .award-key-dates {
+    width: 35%;
+  }
+
+  .award-form-section form {
+    gap: 20px;
+  }
+
+  .award-form-section input[type="text"],
+  .award-form-section select,
+  .award-form-section input[type="email"],
+  .award-form-section textarea {
+    width: 100%;
+  }
+
+  .award-form-section button {
+    width: 40%;
+  }
+
+  .award-key-dates h3 {
+    font-size: 24px;
+  }
+
+  .award-key-dates p {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 350px) {
