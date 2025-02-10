@@ -1528,6 +1528,71 @@ body {
     font-size: 22px;
   }
 }
+/* 0px to 350px */
+@media screen and (max-width: 350px) {
+  #arr {
+      width: 250px;
+      height: 200px;
+  }
+  #arriving {
+      margin-left: 10px;
+      margin-top: 10px;
+      gap: 1%;
+  }
+}
+
+/* 351px to 580px */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #arr {
+      width: 320px;
+      height: 250px;
+  }
+  #arriving {
+      margin-left: 20px;
+      margin-top: 20px;
+      gap: 2%;
+  }
+}
+
+/* 581px to 740px */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #arr {
+      width: 400px;
+      height: 300px;
+  }
+  #arriving {
+      margin-left: 30px;
+      margin-top: 30px;
+      gap: 3%;
+  }
+}
+
+/* 741px to 1040px */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #arr {
+      width: 450px;
+      height: 350px;
+  }
+  #arriving {
+      margin-left: 40px;
+      margin-top: 40px;
+      gap: 4%;
+  }
+}
+
+/* 1041px and above */
+@media screen and (min-width: 1041px) {
+  #arr {
+      width: 520px;
+      height: 400px;
+      object-fit: contain;
+  }
+  #arriving {
+      margin-left: 50px;
+      margin-top: 50px;
+      gap: 5%;
+  }
+}
 
 @media (max-width: 350px) {
   #get {

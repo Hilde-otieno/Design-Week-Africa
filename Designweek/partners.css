@@ -1464,6 +1464,192 @@ margin-left: 50px;
     font-size: 25px;
   }
 }
+@media (max-width: 350px) {
+  #dak {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10%; /* Reduce the gap between items */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 5%; /* Adjust left margin */
+  }
+
+  #idak {
+    width: 80%; /* Full width for smaller screens */
+    height: auto; /* Adjust height automatically */
+  }
+}
+
+/* For screen widths from 351px to 580px */
+@media (min-width: 351px) and (max-width: 580px) {
+  #dak {
+    flex-direction: column; /* Stack items vertically */
+    gap: 12%; /* Adjust the gap */
+    width: 100%; /* Full width */
+    margin-top: 30px; /* Adjust top margin */
+    margin-left: 3%; /* Adjust left margin */
+  }
+
+  #idak {
+    width: 80%; /* Slightly smaller width */
+    height: auto; /* Let height adjust to content */
+  }
+}
+
+/* For screen widths from 581px to 740px */
+@media (min-width: 581px) and (max-width: 740px) {
+  #dak {
+    display: flex; /* Keep items side by side */
+    gap: 10%; /* Reduce gap */
+    width: 98%; /* Keep width the same */
+    margin-top: 40px; /* Adjust top margin */
+    margin-left: 1%; /* Keep left margin the same */
+  }
+
+  #idak {
+    width: 80%; /* Adjust width */
+    height: auto; /* Adjust height */
+  }
+}
+
+/* For screen widths from 741px to 1040px */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #dak {
+    display: flex; /* Keep items side by side */
+    gap: 12%; /* Adjust gap */
+    width: 98%; /* Keep width the same */
+    margin-top: 50px; /* Original margin */
+    margin-left: 1%; /* Original margin */
+  }
+
+  #idak {
+    width: 380px; /* Slightly reduced width */
+    height: 270px; /* Adjust height */
+  }
+}
+
+/* For screen widths above 1040px */
+@media (min-width: 1041px) {
+  #dak {
+    display: flex; /* Keep items side by side */
+    gap: 15%; /* Original gap */
+    width: 98%; /* Original width */
+    margin-top: 50px; /* Original margin */
+    margin-left: 1%; /* Original margin */
+  }
+
+  #idak {
+    width: 400px; /* Original width */
+    height: 280px; /* Original height */
+  }
+}
+/* 0px to 350px */
+@media screen and (max-width: 350px) {
+  #speaks .form-container {
+      width: 85%;
+      height: auto;
+      padding: 10px;
+  }
+  #speaks .form-container input,
+  #speaks .form-container textarea {
+      width: 90%;
+      font-size: 14px;
+      padding: 8px;
+  }
+  #speaks .form-container textarea {
+      height: 100px;
+  }
+  #speaks .form-container button {
+      width: 70%;
+      font-size: 16px;
+      padding: 10px;
+  }
+}
+
+/* 351px to 580px */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #speaks .form-container {
+      width: 85%;
+      height: auto;
+      padding: 15px;
+  }
+  #speaks .form-container input,
+  #speaks .form-container textarea {
+      width: 85%;
+      font-size: 16px;
+      padding: 9px;
+  }
+  #speaks .form-container textarea {
+      height: 110px;
+  }
+  #speaks .form-container button {
+      width: 60%;
+      font-size: 18px;
+  }
+}
+
+/* 581px to 740px */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #speaks .form-container {
+      width: 90%;
+      height: auto;
+      padding: 18px;
+  }
+  #speaks .form-container input,
+  #speaks .form-container textarea {
+      width: 90%;
+      font-size: 18px;
+      padding: 10px;
+  }
+  #speaks .form-container textarea {
+      height: 115px;
+  }
+  #speaks .form-container button {
+      width: 50%;
+      font-size: 20px;
+  }
+}
+
+/* 741px to 1040px */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #speaks .form-container {
+      width: 750px;
+      height: auto;
+      padding: 20px;
+  }
+  #speaks .form-container input,
+  #speaks .form-container textarea {
+      width: 90%;
+      font-size: 19px;
+  }
+  #speaks .form-container textarea {
+      height: 120px;
+  }
+  #speaks .form-container button {
+      width: 40%;
+      font-size: 22px;
+  }
+}
+
+/* 1041px and above */
+@media screen and (min-width: 1041px) {
+  #speaks .form-container {
+      width: 800px;
+      height: 600px;
+      padding: 20px;
+  }
+  #speaks .form-container input,
+  #speaks .form-container textarea {
+      width: 700px;
+      font-size: 19px;
+  }
+  #speaks .form-container textarea {
+      height: 120px;
+  }
+  #speaks .form-container button {
+      width: 30%;
+      font-size: 22px;
+  }
+}
 
 /* 0px - 350px (Smallest mobile screens) */
 @media (max-width: 350px) {
@@ -1638,7 +1824,114 @@ margin-left: 50px;
   font-size: 20px;
 }
 }
+@media (max-width: 350px) {
+  #speaker {
+    flex-direction: column; /* Stack the speaker items vertically */
+    font-size: 16px; /* Smaller font size for small screens */
+    gap: 8%; /* Increased gap for better spacing */
+    margin-left: 20px; /* Reduced margin for small screens */
+    width: 90%; /* Full width */
+  }
 
+  #desc {
+    width: 60px; /* Smaller size for icon/image */
+    height: 60px; /* Smaller height for icon/image */
+  }
+
+  #brill {
+    flex-direction: column; /* Stack items vertically */
+    gap: 8%; /* Increased gap for better spacing */
+    margin-top: 30px; /* Adjusted top margin */
+  }
+}
+
+/* For screen widths from 351px to 580px */
+@media (min-width: 351px) and (max-width: 580px) {
+  #speaker {
+    flex-direction: column; /* Stack speaker items vertically */
+    font-size: 18px; /* Slightly larger font size */
+    gap: 7%; /* Moderate gap */
+    margin-left: 30px;
+    width: 90%; /* Full width */
+  }
+
+  #desc {
+    width: 70px; /* Slightly larger size for icon/image */
+    height: 70px; /* Slightly larger height */
+  }
+
+  #brill {
+    flex-direction: column; /* Stack items vertically */
+    gap: 7%; /* Moderate gap */
+    margin-top: 40px; /* Adjusted margin */
+  }
+}
+
+/* For screen widths from 581px to 740px */
+@media (min-width: 581px) and (max-width: 740px) {
+  #speaker {
+    flex-direction: row; /* Keep items side by side */
+    font-size: 19px; /* Keep font size moderate */
+    gap: 6%; /* Moderate gap between items */
+    margin-left: 40px;
+    width: 90%; /* Adjust width to fit screen */
+  }
+
+  #desc {
+    width: 75px; /* Adjust size for better fit */
+    height: 75px; /* Adjust height for better fit */
+  }
+
+  #brill {
+    flex-direction: row; /* Keep items side by side */
+    gap: 6%; /* Moderate gap */
+    margin-top: 45px; /* Slightly adjusted margin */
+  }
+}
+
+/* For screen widths from 741px to 1040px */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #speaker {
+    flex-direction: row; /* Keep items side by side */
+    font-size: 20px; /* Original font size */
+    gap: 5%; /* Original gap */
+    margin-left: 50px;
+    width: 750px; /* Set width to original size */
+  }
+
+  #desc {
+    width: 80px; /* Original width for icon/image */
+    height: 80px; /* Original height */
+  }
+
+  #brill {
+    flex-direction: row; /* Keep items side by side */
+    gap: 5%; /* Original gap */
+    margin-top: 50px; /* Original top margin */
+  }
+}
+
+/* For screen widths above 1040px */
+@media (min-width: 1041px) {
+  #speaker {
+    flex-direction: row; /* Keep items side by side */
+    font-size: 20px; /* Original font size */
+    gap: 5%; /* Original gap */
+    margin-left: 80px;
+    width: 750px; /* Set width to original size */
+  }
+
+  #desc {
+    width: 80px; /* Original width for icon/image */
+    height: 80px; /* Original height */
+  }
+
+  #brill {
+    flex-direction: row; /* Keep items side by side */
+    gap: 5%; /* Original gap */
+    margin-top: 50px; /* Original top margin */
+  }
+}
 /* 1041px and above (Large desktop screens) */
 @media (min-width: 1041px) {
 #adv {
