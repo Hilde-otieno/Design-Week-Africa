@@ -1194,7 +1194,7 @@ body {
     }
   
     #join {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
   
@@ -1226,21 +1226,21 @@ body {
     }
   
     #join {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
   
   /* 581px - 780px (Medium mobile screens and larger tablets) */
   @media (min-width: 581px) and (max-width: 740px) {
     #main {
-      width: 75%;  /* Adjust width to fit better */
+      width: 95%;  /* Adjust width to fit better */
       margin-top: 40px;
-      margin-left: 50px;
+      margin-left: 20px;
     }
   
     #seat {
       display: flex;
-      gap: 10%;
+      gap: 3%;
     }
   
     #people {
@@ -1264,19 +1264,20 @@ body {
   /* 781px - 1040px (Small desktop screens) */
   @media (min-width: 741px) and (max-width: 1040px) {
     #main {
-      width: 60%;  /* Adjust for medium screens */
+      width: 400px;  /* Adjust for medium screens */
       margin-top: 50px;
-      margin-left: 100px;
+      margin-left: 20px;
     }
   
     #seat {
       display: flex;
-      gap: 14%;
+      gap: 3%;
+      width: 100%;
     }
   
     #people {
-      width: 70%;
-      height: 750px;
+      width: 80%;
+      height: auto;
     }
   
     #welcome {
@@ -1285,29 +1286,31 @@ body {
   
     #pres {
       font-size: 35px;
+      width: 400px;
     }
   
     #join {
       font-size: 25px;
+      width: 400px;
     }
   }
   
   /* 1041px and above (Large desktop screens) */
   @media (min-width: 1041px) {
     #main {
-      width: 600px;  /* Full size for larger screens */
+      width: 700px;  /* Full size for larger screens */
       margin-top: 50px;
-      margin-left: 120px;
+      margin-left: 50px;
     }
   
     #seat {
       display: flex;
-      gap: 14%;
+      gap: 5%;
     }
   
     #people {
-      width: 700px;
-      height: 800px;
+      width: 800px;
+      height: 600px;
     }
   
     #welcome {
@@ -1782,6 +1785,7 @@ body {
 @media (min-width: 741px) and (max-width: 1040px) {
   #get {
     height: 350px;
+    width: 100%;
     margin-top: 50px;
   }
 
@@ -1796,9 +1800,9 @@ body {
   }
 
   #view {
-    width: 300px;
+    width: 40%;
     height: 80px;
-    margin-left: 200px;  /* Center the button */
+    margin-left: 30%;  /* Center the button */
     font-size: 35px;
     margin-top: 50px;
   }
@@ -1842,7 +1846,7 @@ body {
   #footer {
     flex-direction: column;
     height: auto; /* Adjust height for smaller screens */
-    padding: 20px;
+    width: 100%;
   }
 
   #menu h3 {
@@ -1919,11 +1923,11 @@ body {
   }
 }
 
-/* 581px - 780px (Medium mobile screens and larger tablets) */
 @media (min-width: 581px) and (max-width: 740px) {
   #footer {
     flex-direction: row;
     height: 400px;
+    width: 100%;
   }
 
   #menu h3 {
@@ -1961,8 +1965,11 @@ body {
 /* 781px - 1040px (Small desktop screens) */
 @media (min-width: 741px) and (max-width: 1040px) {
   #footer {
+    display: flex !important;
     flex-direction: row;
     height: 400px;
+    width: 100% !important;
+    flex-grow: 1;
   }
 
   #menu h3 {
@@ -1997,3 +2004,49 @@ body {
   }
 }
 
+
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  #aidw {
+      padding: 20px;
+      font-size: 18px;
+      line-height: 2rem;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #aidw {
+      padding: 30px;
+      font-size: 22px;
+      line-height: 2.5rem;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #aidw {
+      padding: 40px;
+      font-size: 25px;
+      line-height: 2.75rem;
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #aidw {
+      /* padding: 45px; */
+      font-size: 28px;
+      line-height: 2.9rem;
+      width: 750px;
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  #aidw {
+      padding: 50px;
+      font-size: 30px;
+      line-height: 3rem;
+  }
+}

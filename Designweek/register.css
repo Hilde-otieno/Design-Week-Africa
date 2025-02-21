@@ -240,13 +240,7 @@ body {
     /* margin-top: 50px; */
     margin-left: 50px;
   }
-  #seat{
-    display: flex;
-    gap: 2%;
-    margin-top: 50px;
-    margin-left:50px;
-    margin-right: 20px;
-  }
+
 
   #us{
     width: 90%;
@@ -270,6 +264,13 @@ body {
     height: 300px;
     border-radius: 50px;
  }
+ #seat{
+  display: flex;
+  gap: 2%;
+  margin-top: 50px;
+  margin-left:50px;
+  margin-right: 20px;
+}
  #pass{
     width: 360px;
     font-size: 18px;
@@ -2040,4 +2041,254 @@ body {
     font-size: 18px;
   }
 }
+/* 0px to 350px */
+@media screen and (max-width: 350px) {
+  #us {
+      width: 95%;
+      margin-top: 30px;
+      margin-left: 2.5%;
+  }
+}
 
+/* 351px to 580px */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #us {
+      width: 92%;
+      margin-top: 40px;
+      margin-left: 4%;
+  }
+}
+
+/* 581px to 740px */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #us {
+      width: 90%;
+      margin-top: 45px;
+      margin-left: 5%;
+  }
+}
+
+/* 741px to 1040px */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #us {
+      width: 88%;
+      margin-top: 50px;
+      margin-left: 6%;
+  }
+}
+
+/* 1041px and above */
+@media screen and (min-width: 1041px) {
+  #us {
+      width: 90%;
+      margin-top: 50px;
+      margin-left: 5%;
+  }
+}
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  #seat {
+      flex-direction: column;
+      gap: 5%;
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  #pass {
+      width: 90%;
+      font-size: 16px;
+      padding: 15px;
+  }
+  #sel {
+      margin-left: 20px;
+      font-size: 18px;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #seat {
+      flex-direction: column;
+      gap: 4%;
+      margin-top: 35px;
+      margin-left: 15px;
+      margin-right: 15px;
+  }
+  #pass {
+      width: 85%;
+      font-size: 17px;
+      padding: 18px;
+  }
+  #sel {
+      margin-left: 40px;
+      font-size: 20px;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #seat {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3%;
+      margin-left: 30px;
+      margin-right: 20px;
+  }
+  #pass {
+      width: 48%;
+      font-size: 18px;
+      padding: 20px;
+  }
+  #sel {
+      margin-left: 60px;
+      font-size: 22px;
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #seat {
+      flex-direction: row;
+      gap: 2%;
+      margin-left: 40px;
+      margin-right: 30px;
+  }
+  #pass {
+      width: 40%;
+      font-size: 18px;
+      padding: 20px;
+  }
+  #sel {
+      margin-left: 75px;
+      font-size: 24px;
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  #seat {
+      display: flex;
+      gap: 2%;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 20px;
+  }
+  #pass {
+      width: 360px;
+      font-size: 18px;
+      padding: 20px;
+  }
+  #sel {
+      margin-left: 90px;
+      font-size: 24px;
+  }
+}
+
+@media (max-width: 350px) {
+  #speaker {
+    flex-direction: column; /* Stack the speaker items vertically */
+    font-size: 16px; /* Smaller font size for small screens */
+    gap: 8%; /* Increased gap for better spacing */
+    margin-left: 20px; /* Reduced margin for small screens */
+    width: 90%; /* Full width */
+  }
+
+  #desc {
+    width: 60px; /* Smaller size for icon/image */
+    height: 60px; /* Smaller height for icon/image */
+  }
+
+  #brill {
+    flex-direction: column; /* Stack items vertically */
+    gap: 8%; /* Increased gap for better spacing */
+    margin-top: 30px; /* Adjusted top margin */
+  }
+}
+
+/* For screen widths from 351px to 580px */
+@media (min-width: 351px) and (max-width: 580px) {
+  #speaker {
+    flex-direction: column; /* Stack speaker items vertically */
+    font-size: 18px; /* Slightly larger font size */
+    gap: 7%; /* Moderate gap */
+    margin-left: 30px;
+    width: 90%; /* Full width */
+  }
+
+  #desc {
+    width: 70px; /* Slightly larger size for icon/image */
+    height: 70px; /* Slightly larger height */
+  }
+
+  #brill {
+    flex-direction: column; /* Stack items vertically */
+    gap: 7%; /* Moderate gap */
+    margin-top: 40px; /* Adjusted margin */
+  }
+}
+
+/* For screen widths from 581px to 740px */
+@media (min-width: 581px) and (max-width: 740px) {
+  #speaker {
+    flex-direction: row; /* Keep items side by side */
+    font-size: 19px; /* Keep font size moderate */
+    gap: 6%; /* Moderate gap between items */
+    margin-left: 40px;
+    width: 90%; /* Adjust width to fit screen */
+  }
+
+  #desc {
+    width: 75px; /* Adjust size for better fit */
+    height: 75px; /* Adjust height for better fit */
+  }
+
+  #brill {
+    flex-direction: row; /* Keep items side by side */
+    gap: 6%; /* Moderate gap */
+    margin-top: 45px; /* Slightly adjusted margin */
+  }
+}
+
+/* For screen widths from 741px to 1040px */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #speaker {
+    flex-direction: row; /* Keep items side by side */
+    font-size: 20px; /* Original font size */
+    gap: 5%; /* Original gap */
+    margin-left: 50px;
+    width: 750px; /* Set width to original size */
+  }
+
+  #desc {
+    width: 80px; /* Original width for icon/image */
+    height: 80px; /* Original height */
+  }
+
+  #brill {
+    flex-direction: row; /* Keep items side by side */
+    gap: 5%; /* Original gap */
+    margin-top: 50px; /* Original top margin */
+  }
+}
+
+/* For screen widths above 1040px */
+@media (min-width: 1041px) {
+  #speaker {
+    flex-direction: row; /* Keep items side by side */
+    font-size: 20px; /* Original font size */
+    gap: 5%; /* Original gap */
+    margin-left: 80px;
+    width: 750px; /* Set width to original size */
+  }
+
+  #desc {
+    width: 80px; /* Original width for icon/image */
+    height: 80px; /* Original height */
+  }
+
+  #brill {
+    flex-direction: row; /* Keep items side by side */
+    gap: 5%; /* Original gap */
+    margin-top: 50px; /* Original top margin */
+  }
+}

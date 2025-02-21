@@ -278,8 +278,8 @@ body {
 }
 
 #president {
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 #stay{
@@ -2018,3 +2018,174 @@ body {
   }
 }
 
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  #stay {
+      flex-direction: column; /* Stack slideshows vertically */
+      gap: 10px;
+      padding: 10px;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #stay {
+      flex-direction: column; /* Stack slideshows vertically */
+      gap: 15px;
+      padding: 15px;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #stay {
+      flex-direction: row; /* Side by side */
+      flex-wrap: wrap; /* Allow wrapping if needed */
+      gap: 15px;
+      padding: 20px;
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #stay {
+      flex-direction: row; /* Side by side */
+      justify-content: space-around; /* Distribute space more evenly */
+      gap: 20px;
+      padding: 25px;
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  #stay {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+  }
+}
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  #president {
+      height: 250px; /* Reduce height for small screens */
+      width: 300px;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #president {
+      height: 300px; /* Adjust height for better fit */
+      width: 300px;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #president {
+      height: 400px; /* Increase height for tablets */
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #president {
+      height: 500px; /* Scale height for medium screens */
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  #president {
+      height: 600px; /* Default height */
+  }
+}
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  .slides {
+      width: 100%;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  .slides {
+      width: 100%;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  .slides {
+      width: 100%;
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  .slides {
+      width: 100%;
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  .slides {
+      width: 100%;
+  }
+}
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  .slideshow-container {
+      width: 100%; /* Full width for better visibility on small screens */
+  }
+
+  .slideshow-container h3 {
+      font-size: 18px;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  .slideshow-container {
+      width: 100%;
+  }
+
+  .slideshow-container h3 {
+      font-size: 22px;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  .slideshow-container {
+      width: 90%; /* Slightly smaller width to balance layout */
+  }
+
+  .slideshow-container h3 {
+      font-size: 24px;
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  .slideshow-container {
+      width: 80%;
+  }
+
+  .slideshow-container h3 {
+      font-size: 26px;
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  .slideshow-container {
+      width: 48%;
+  }
+
+  .slideshow-container h3 {
+      font-size: 30px;
+  }
+}

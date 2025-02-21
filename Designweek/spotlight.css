@@ -250,6 +250,11 @@ body {
     margin-top: 50px;
     margin-left: 450px;
   }
+  #stall{
+    width: 350px;
+    height: 200px;
+    border-radius: 50px;
+  }
 
 #people{
     width: 570px;
@@ -266,11 +271,7 @@ body {
     line-height: 2rem;
 }
 
-#stall{
-    width: 350px;
-    height: 200px;
-    border-radius: 50px;
-  }
+
  #us{
     padding: 40px;
  } 
@@ -2011,3 +2012,124 @@ body {
   }
 }
 
+/* 0px to 350px (Extra Small Screens) */
+@media screen and (max-width: 350px) {
+  #join {
+      font-size: 16px;
+      line-height: 1.5rem;
+  }
+  #main {
+      width: 90%;
+      margin-left: 10px;
+  }
+  #main p {
+      font-size: 18px;
+  }
+  #seat {
+      flex-direction: column;
+      margin-left: 10px;
+  }
+  #stall {
+      width: 90%;
+      height: 150px;
+      border-radius: 30px;
+  }
+}
+
+/* 351px to 580px (Small Phones) */
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  #join {
+      font-size: 18px;
+      line-height: 1.75rem;
+  }
+  #main {
+      width: 85%;
+      margin-left: 15px;
+  }
+  #main p {
+      font-size: 20px;
+  }
+  #seat {
+      flex-direction: column;
+      margin-left: 20px;
+  }
+  #stall {
+      width: 80%;
+      height: 170px;
+      border-radius: 40px;
+  }
+}
+
+/* 581px to 740px (Tablets in Portrait Mode) */
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  #join {
+      font-size: 20px;
+      line-height: 2rem;
+  }
+  #main {
+      width: 75%;
+      margin-left: 30px;
+  }
+  #main p {
+      font-size: 22px;
+  }
+  #seat {
+      flex-direction: row;
+      margin-left: 50px;
+  }
+  #stall {
+      width: 300px;
+      height: 180px;
+      border-radius: 45px;
+  }
+}
+
+/* 741px to 1040px (Tablets & Small Laptops) */
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  #join {
+      font-size: 22px;
+      line-height: 2rem;
+  }
+  #main {
+      width: 600px;
+      margin-left: 40px;
+  }
+  #main p {
+      font-size: 23px;
+  }
+  #seat {
+      flex-direction: row;
+      margin-left: 200px;
+  }
+  #stall {
+      width: 320px;
+      height: 190px;
+      border-radius: 50px;
+  }
+}
+
+/* 1041px and above (Larger Screens) */
+@media screen and (min-width: 1041px) {
+  #join {
+      font-size: 20px;
+      line-height: 2rem;
+  }
+  #main {
+      width: 500px;
+      margin-left: 50px;
+  }
+  #main p {
+      font-size: 25px;
+  }
+  #seat {
+      display: flex;
+      gap: 4%;
+      margin-top: 50px;
+      margin-left: 450px;
+  }
+  #stall {
+      width: 350px;
+      height: 200px;
+      border-radius: 50px;
+  }
+}

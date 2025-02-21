@@ -307,8 +307,8 @@ body {
 }
 
 #text-container {
-    max-width: 350px; /* Limit the text container width */
     font-size: 18px;
+    width: 90%;
 }
 #why{
   margin-top: -70px;
@@ -739,6 +739,12 @@ button:hover {
   color: white;
 }
 
+#space{
+  text-decoration: none;
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
 @media screen and (max-width:350px){
   body {
     margin: 0;
@@ -2593,17 +2599,22 @@ video {
     height: 800px;
   }
 
-  #welcome {
-    font-size: 60px;
-  }
+ 
 
   #pres {
     font-size: 35px;
   }
 
-  #join {
-    font-size: 25px;
-  }
+#welcom{
+  width: 100%;
+  font-size: 55px;
+
+}
+#joi{
+  width: 100%;
+  font-size: 25px;
+
+}
 }
 
 /* 0px - 350px (Smallest mobile screens) */

@@ -1999,3 +1999,51 @@ body {
   }
 }
 
+@media (max-width: 350px) {
+  #conferences {
+    margin-left: 2%; /* Reduced margin */
+    margin-top: 20px; /* Adjusted margin */
+    width: 85%; /* Increased width for smaller screens */
+    padding: 15px; /* Smaller padding */
+  }
+}
+
+/* For screen widths from 351px to 580px */
+@media (min-width: 351px) and (max-width: 580px) {
+  #conferences {
+    margin-left: 2%; /* Reduced margin */
+    margin-top: 30px; /* Adjusted margin */
+    width: 85%; /* Increased width for smaller screens */
+    padding: 18px; /* Slightly smaller padding */
+  }
+}
+
+/* For screen widths from 581px to 740px */
+@media (min-width: 581px) and (max-width: 740px) {
+  #conferences {
+    margin-left: 2%; /* Slightly reduced margin */
+    margin-top: 40px; /* Adjusted margin */
+    width: 85%; /* Adjusted width */
+    padding: 18px; /* Adjusted padding */
+  }
+}
+
+/* For screen widths from 741px to 1040px */
+@media (min-width: 741px) and (max-width: 1040px) {
+  #conferences {
+    margin-left: 7%; /* Slightly reduced margin */
+    margin-top: 50px; /* Original margin */
+    width: 80%; /* Original width */
+    padding: 20px; /* Original padding */
+  }
+}
+
+/* For screen widths above 1040px */
+@media (min-width: 1041px) {
+  #conferences {
+    margin-left: 8%; /* Original margin */
+    margin-top: 50px; /* Original margin */
+    width: 80%; /* Original width */
+    padding: 20px; /* Original padding */
+  }
+}

@@ -626,7 +626,13 @@ body {
 .subscribe-form button:hover {
     background-color: rgb(245, 240, 65);  /* Darker green when hovered */
 }
-
+#space{
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 20px;
+}
 
 @media screen and (max-width:350px){
   body {
@@ -1949,162 +1955,16 @@ margin-left: 50px;
   height: 80px;
   margin-left: 750px;  /* Position the button to the right for large screens */
   font-size: 35px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  color: black;
 }
 
 #view a {
   font-size: 28px;
+  color: black;
 }
 }
 
-@media (max-width: 350px) {
-#get {
-  height: 250px;  /* Reduce height for small screens */
-  margin-top: 30px;
-}
-
-#get h1 {
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-
-#get h3 {
-  font-size: 18px;
-  margin-top: 50px;
-}
-
-#view {
-  width: 220px;
-  height: 60px;
-  margin-left: 50px; /* Center the button */
-  font-size: 25px;
-  margin-top: 30px;
-}
-
-#view a {
-  font-size: 18px;
-}
-}
-
-/* 351px - 580px (Small mobile screens and small tablets) */
-@media (min-width: 351px) and (max-width: 580px) {
-#get {
-  height: 300px;
-  margin-top: 40px;
-}
-
-#get h1 {
-  font-size: 35px;
-  margin-bottom: 60px;
-}
-
-#get h3 {
-  font-size: 20px;
-  margin-top: 60px;
-}
-
-#view {
-  width: 250px;
-  height: 70px;
-  margin-left: 100px;  /* Center the button */
-  font-size: 30px;
-  margin-top: 40px;
-}
-
-#view a {
-  font-size: 22px;
-}
-}
-
-/* 581px - 780px (Medium mobile screens and larger tablets) */
-@media (min-width: 581px) and (max-width: 740px) {
-#get {
-  height: 320px;
-  margin-top: 50px;
-}
-
-#get h1 {
-  font-size: 40px;
-  margin-bottom: 70px;
-}
-
-#get h3 {
-  font-size: 22px;
-  margin-top: 70px;
-}
-
-#view {
-  width: 270px;
-  height: 75px;
-  margin-left: 150px;  /* Center the button */
-  font-size: 32px;
-  margin-top: 45px;
-}
-
-#view a {
-  font-size: 24px;
-}
-}
-
-/* 781px - 1040px (Small desktop screens) */
-@media (min-width: 741px) and (max-width: 1040px) {
-#get {
-  height: 350px;
-  margin-top: 50px;
-}
-
-#get h1 {
-  font-size: 45px;
-  margin-bottom: 80px;
-}
-
-#get h3 {
-  font-size: 24px;
-  margin-top: 80px;
-}
-
-#view {
-  width: 300px;
-  height: 80px;
-  margin-left: 200px;  /* Center the button */
-  font-size: 35px;
-  margin-top: 50px;
-}
-
-#view a {
-  font-size: 26px;
-}
-}
-
-/* 1041px and above (Large desktop screens) */
-@media (min-width: 1041px) {
-#get {
-  height: 350px;
-  margin-top: 50px;
-}
-
-#get h1 {
-  font-size: 45px;
-  margin-bottom: 80px;
-}
-
-#get h3 {
-  font-size: 24px;
-  margin-top: 80px;
-}
-
-#view {
-  width: 300px;
-  height: 80px;
-  margin-left: 750px;  /* Position the button to the right for large screens */
-  font-size: 35px;
-  margin-top: 50px;
-}
-
-#view a {
-  font-size: 28px;
-}
-}
 
 @media (max-width: 350px) {
 #footer {

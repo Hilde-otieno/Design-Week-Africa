@@ -1315,7 +1315,7 @@ body {
   
     #seat {
       display: flex;
-      gap: 14%;
+      gap: 4%;
     }
   
     #people {
