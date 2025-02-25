@@ -4,282 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
     <link rel="stylesheet" href="register.css">
-
 </head>
 <body>
-    
-
   <div id="navbar">
     <img id="logo" src="Images/DWA LOGO (2)-page-002.jpg" alt="Logo">
 
-  <!-- Hamburger Icon for Small Screens -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
+    <!-- Hamburger Icon for Small Screens -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Navbar Links -->
+    <div id="nav">
+      <!-- About Dropdown -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="#">About</a>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:5500/Designweek/who.html">Who we are</a>
+          <a href="http://127.0.0.1:5500/Designweek/advisory.html">Advisory Council</a>
+          <a href="http://127.0.0.1:5500/Designweek/partners.html">Partners</a>
+          <a href="http://127.0.0.1:5500/Designweek/team.html">The Team</a>
+          <a href="http://127.0.0.1:5500/Designweek/blog.html">Blogs</a>
+        </div>
+      </div>
+
+      <!-- Sponsor Link -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/sponsor.html">Sponsor</a>
+      </div>
+
+      <!-- Events Link -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/events.html">Events</a>
+      </div>
+
+      <!-- Programming Link -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/programming.html">Programming</a>
+      </div>
+
+      <!-- Media Link -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/media.html">Media</a>
+      </div>
+
+      <!-- Exhibit Dropdown -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="#">Exhibit</a>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:5500/Designweek/floor.html">Floor Plans</a>
+          <a href="http://127.0.0.1:5500/Designweek/spotlight.html">Exhibitor Spotlight</a>
+        </div>
+      </div>
+
+      <!-- Attend Dropdown -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="#">Attend</a>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:5500/Designweek/register.html">Register</a>
+          <a href="http://127.0.0.1:5500/Designweek/travels.html">Hotels and Travels</a>
+        </div>
+      </div>
+
+      <!-- Awards Dropdown -->
+      <div class="dropdown">
+        <a class="dropdown-btn nav-item" href="#">Awards</a>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:5500/Designweek/awards.html">Professional</a>
+          <a href="http://127.0.0.1:5500/Designweek/student.html">Student</a>
+        </div>
+      </div>
+    </div>    
   </div>
 
-  <!-- Navbar Links -->
-  <div id="nav">
-    <!-- About Dropdown -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="#">About</a>
-      <div class="dropdown-content">
-        <a href="http://127.0.0.1:5500/Designweek/who.html">Who we are</a>
-        <a href="http://127.0.0.1:5500/Designweek/advisory.html">Advisory Council</a>
-        <a href="http://127.0.0.1:5500/Designweek/partners.html">Partners</a>
-        <a href="http://127.0.0.1:5500/Designweek/team.html">The Team</a>
-        <a href="http://127.0.0.1:5500/Designweek/blog.html">Blogs</a>
-      </div>
+  <div id="landing">
+    <div id="jan">
+      <h2 id="through">Register</h2>
+      <h3 id="nairobi"><span id="nai">(DWA)</span> Nairobi, Kenya | September 22 – 26</h3>
+      <h1 id="take">Innovative Design For Quality Living</h1>
     </div>
-
-    <!-- Sponsor Link -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/sponsor.html">Sponsor</a>
-    </div>
-
-    <!-- Events Link -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/events.html">Events</a>
-    </div>
-
-    <!-- Programming Link -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/programming.html">Programming</a>
-    </div>
-
-    <!-- Media Link -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="http://127.0.0.1:5500/Designweek/media.html">Media</a>
-    </div>
-
-    <!-- Exhibit Dropdown -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="#">Exhibit</a>
-      <div class="dropdown-content">
-        <a href="http://127.0.0.1:5500/Designweek/floor.html">Floor Plans</a>
-        <a href="http://127.0.0.1:5500/Designweek/spotlight.html">Exhibitor Spotlight</a>
-      </div>
-    </div>
-
-    <!-- Attend Dropdown -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="#">Attend</a>
-      <div class="dropdown-content">
-        <a href="http://127.0.0.1:5500/Designweek/register.html">Register</a>
-        <a href="http://127.0.0.1:5500/Designweek/travels.html">Hotels and Travels</a>
-      </div>
-    </div>
-
-    <!-- Awards Dropdown -->
-    <div class="dropdown">
-      <a class="dropdown-btn nav-item" href="#">Awards</a>
-      <div class="dropdown-content">
-        <a href="http://127.0.0.1:5500/Designweek/awards.html">Professional</a>
-        <a href="http://127.0.0.1:5500/Designweek/student.html">Student</a>
-      </div>
-    </div>
-  </div>    
-</div>
-
-    
-<div id="landing">
-  <div id="jan">
-    <h2 id="through">Register</h2>
-
-    <h3 id="nairobi"> <span id="nai">(DWA)</span> Nairobi, Kenya | September 22 – 26  
-    </h3>
-    <h1 id="take">Innovative Design For Quality Living</h1>
-    
-</div>
-  
-    
-   <img id="booklet" src="Images/DWA BOOKLET.jpg">
+    <img id="booklet" src="Images/DWA BOOKLET.jpg">
   </div>
-</div>
-          
-        <div id="us">
-            <h3>PRICING</h3>
-            <h1 id="welcome">Plans and Pricing</h1>
-            <p id="join">Securing your spot at the Africa Interior Design Week & Awards 2025 is just a few clicks away. Choose your preferred ticket category and be part of this exceptional event. Join us in shaping the future of African design.
-    
-            </p>
-         </div>
-         
+
+  <div id="us">
+    <h3>PRICING</h3>
+    <h1 id="welcome">Plans and Pricing</h1>
+    <p id="join">Securing your spot at the Africa Interior Design Week & Awards 2025 is just a few clicks away. Choose your preferred ticket category and be part of this exceptional event. Join us in shaping the future of African design.</p>
+  </div>
+
+  <div id="seat">
+    <div id="pass">
+      <h1>Regular Conference</h1>
+      <h3>3 Day Regular Pass</h3>
+      <p>10 AM tea & 4 PM tea</p>
+      <p>No Lunch</p>
+      <p>Receive a regular delegate kit</p>
+      <p>Networking opportunities</p>
+      <h2>Ksh 6000</h2>
+      <button id="sel">Select</button>
+    </div>
+
+    <div id="pass">
+      <h1>VIP Conference</h1>
+      <h3>3 Day Regular Pass</h3>
+      <p>10 AM tea & 4 PM tea</p>
+      <p>Lunch (International Buffet)</p>
+      <p>Receive VIP delegate kit</p>
+      <p>Prime and Reserved Seating</p>
+      <h2>Ksh 24000</h2>
+      <button id="sel">Select</button>
+    </div>
+
+    <div id="pass">
+      <h1>VIP Gala Dinner</h1>
+      <h3>From 6 PM</h3>
+      <p>Served while seated</p>
+      <p>Inspiring keynote address</p>
+      <p>African Cultural Showcases</p>
+      <p>Networking opportunities</p>
+      <h2>Ksh 10000</h2>
+      <button id="sel">Select</button>
+    </div>
+
+    <div id="pass">
+      <h1>Regular Gala Dinner</h1>
+      <h3>From 6 PM</h3>
+      <p>Self-service</p>
+      <p>Inspiring keynote address</p>
+      <p>African Cultural Showcases</p>
+      <p>Networking opportunities</p>
+      <h2>Ksh 6500</h2>
+      <button id="sel">Select</button>
+    </div>
+  </div>
+
+  <div id="brill">
+    <div id="speak">
+      <div id="speaker">
+        <img id="desc" src="Images/des.png">
+        <div id="speaking">
+          <h3>In Person Networking</h3>
+          <p>Immerse yourself in a vibrant community of design enthusiasts, forge meaningful connections, and expand your professional network through in-person networking opportunities.</p>
         </div>
       </div>
-     
-      <div id="seat">
-        <div id="pass">
-            <h1>Regular Conference</h1>
-            <h3>3 Day Regular Pass</h3>
-            <p>10 AM tea & 4 PM tea</p>
-            <p>No Lunch</p>
-            <p>Receive a regular deligate kit</p>
-            <p>Networking opportunities</p>
-            <h2>Ksh 6000</h2>
-            <button id="sel">Select</button>
-        </div>
-
-        <div id="pass">
-            <h1>VIP Conference</h1>
-            <h3>3 Day Regular Pass</h3>
-            <p>10 AM tea & 4 PM tea</p>
-            <p>Lunch (International Buffet)</p>
-            <p>Receive VIP deligate kit</p>
-            <p>Prime and Reserved</p>
-            <p>Sitting</p>
-            <h2>Ksh 24000</h2>
-            <button id="sel">Select</button>
-        </div>
-
-        <div id="pass">
-            <h1>VIP Gala Dinner</h1>
-            <h3>From 6 PM</h3>
-            <p>Served while seated</p>
-            <p>Inspiring keynote address</p>
-            <p>African Cultural Showcases</p>
-            <p>Networking opportunities</p>
-            <h2>Ksh 10000</h2>
-            <button id="sel">Select</button>
-        </div>
-        <div id="pass">
-            <h1>Regular Gala Dinner</h1>
-            <h3>From 6 PM</h3>
-            <p>Self service</p>
-            <p>Inspiring keynote address</p>
-            <p>African Cultural Showcases</p>
-            <p>Networking opportunities</p>
-            <h2>Ksh 6500</h2>
-            <button id="sel">Select</button>
+      <div id="speaker">
+        <img id="desc" src="Images/look.png">
+        <div id="speaking">
+          <h3>Boost Creativity</h3>
+          <p>Fuel your creative inspiration with our event’s immersive atmosphere, diverse design perspectives, and stimulating workshops, unlocking your boundless creative potential.</p>
         </div>
       </div>
+      <div id="speaker">
+        <img id="desc" src="Images/client.png">
+        <div id="speaking">
+          <h3>Potential Clients</h3>
+          <p>Attract potential clients and expand your business opportunities as our event brings together a diverse audience of industry professionals and decision-makers.</p>
+        </div>
+      </div>
+    </div>
 
-    
-      <div id="brill">
-        <div id="speak">
-            <div id="speaker">
-              <img id="desc" src="Images/des.png">
-                <div id="speaking">
-                    <h3>In  Person Networking
-                    </h3>
-                    <p>Immerse yourself in a vibrant community of
-                      design enthusiasts, forge meaningful
-                      connections, and expand your professional
-                      network through in-person networking
-                      opportunities</p>
-                </div>
-            </div>
-            <div id="speaker">
-              <img id="desc" src="Images/look.png">
-                <div id="speaking">
-                    <h3>Boost Creativity
-                    </h3>
-                    <p>Fuel your creative inspiration with our
-                      event’s immersive atmosphere, diverse
-                      design perspectives, and stimulating
-                      workshops, unlocking your boundless
-                      creative potential.</p>
-                </div>
-            </div>
-            <div id="speaker">
-              <img id="desc" src="Images/client.png">
-                <div id="speaking">
-                    <h3>Potential Clients
-                    </h3>
-                    <p>Attract potential clients and expand your
-                      business opportunities as our event brings
-                      together a diverse audience of industry
-                      professionals and decision-makers.</p>
-                </div>
-            </div>
+    <div id="speak">
+      <div id="speaker">
+        <img id="desc" src="Images/mic.png">
+        <div id="speaking">
+          <h3>Top Speakers</h3>
+          <p>Be enlightened by industry leaders, researchers, & innovators in the design field.</p>
         </div>
-        
-        <div id="speak">
-        
-        <div id="speaker">
-          <img id="desc" src="Images/mic.png">
-            <div id="speaking">
-                <h3>Top speakers
-                </h3>
-                <p>Be enlightened by industry leaders,researchers &
-                  innovators in the Design eld.</p>
-            </div>
+      </div>
+      <div id="speaker">
+        <img id="desc" src="Images/lifelong.png">
+        <div id="speaking">
+          <h3>Lifelong Learning</h3>
+          <p>At Design Week Africa, lifelong learning takes center stage, emphasizing the continuous growth and evolution of professionals within the design industry. This year's event proudly collaborates with the International Design Continuing Education Council (IDCEC) and the Council for Interior Design Qualification (CIDQ), underscoring a commitment to maintaining high standards and promoting educational advancement.</p>
         </div>
-        <div id="speaker">
-          <img id="desc" src="Images/lifelong.png">
-            <div id="speaking">
-                <h3>Lifelong Learning
-                </h3>
-                <p>At Design Week Africa, lifelong learning takes
-                  center stage, emphasizing the continuous
-                  growth and evolution of professionals within the
-                  design industry. This year's event proudly
-                  collaborates with the International Design
-                  Continuing Education Council (IDCEC) and the
-                  Council for Interior Design Qualification (CIDQ),
-                  underscoring a commitment to maintaining high
-                  standards and promoting educational
-                  advancement.</p>
-            </div>
-        </div>
-        </div>
-        
-        </div>
-         
-<div id="get">
-  <h3>GET STARTED</h3>
-  <h1>Immerse yourself in a celebration of design brilliance, innovation, and industry expertise.</h1>
+      </div>
+    </div>
+  </div>
 
-</div>
+  <div id="get">
+    <h3>GET STARTED</h3>
+    <h1>Immerse yourself in a celebration of design brilliance, innovation, and industry expertise.</h1>
+  </div>
 
-<button id="view">
-  <a href="http://127.0.0.1:5501/register.html">Get tickets Now</a></button>
-  
+  <button id="view">
+    <a href="http://127.0.0.1:5501/register.html">Get tickets Now</a>
+  </button>
+
   <div id="footer">
-        <div id="foot">
-        <img id="finish" src="Images/DWA LOGO (2)-page-002.jpg">
-        <div id="media">
-      <img id="facebook" src="Images/face.png">
-      <img id="facebook" src="Images/x.png">
-      <img id="facebook" src="Images/linkedin.svg">
-      <img id="facebook" src="Images/youtube.webp">
-        </div>
+    <div id="foot">
+      <img id="finish" src="Images/DWA LOGO (2)-page-002.jpg">
+      <div id="media">
+        <img id="facebook" src="Images/face.png">
+        <img id="facebook" src="Images/x.png">
+        <img id="facebook" src="Images/linkedin.svg">
+        <img id="facebook" src="Images/youtube.webp">
       </div>
-      <div id="menu">
-        <h3>We'd love to hear from you
-        </h3>
-        <p>Design Week Africa</p>
-        <p>info@designweek.africa</p>
-        <p>
-          <span style="border-right: 2px solid black; padding-right: 10px;">+254713937937</span>
-          <span>+254700758758</span>
-        </p>
-                <p>Lavington 906 James, Gichuru Road, Nairobi</p>
-        
-      </div>
-     
-      <div class="form-container">
-        <form action="/submit-email" method="POST">
-          <!-- <label for="email">Enter your email:</label> -->
-          <input type="email" id="email" name="email" required placeholder="Enter email address">
-          <button id="sub" type="submit">Subscribe</button>
-        </form>
-      </div>
-      
-      </div>
-    
-      <script src="design.js"></script>
-</body>
-</html>
+    </div>
+    <div id="menu">
+      <h3>We'd love to hear from you</h3>
+      <p>Design Week Africa</p>
+      <p>info@designweek.africa</p>
+      <p>
+        <span style="border-right: 2px solid black; padding-right: 10px;">+254713937937</span>
+        <span>+254700758758</span>
+      </p>
+      <p>Lavington 906 James, Gichuru Road, Nairobi</p>
+    </div>
+
+    <div class="form-container">
+      <form action="/submit-email" method="POST">
+        <input type="email" id="email" name="email" required placeholder="Enter email address">
+        <button id="sub" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="design.js"></script>
 </body>
 </html>
