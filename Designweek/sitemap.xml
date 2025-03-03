@@ -1,82 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://design-week-africa-7l3f.vercel.app/</loc>
+    <loc>https://designweek.africa/</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/advisory.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/advisory.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/who.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/who.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/partners.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/partners.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/team.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/team.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/blog.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/blog.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/sponsor.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/sponsor.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/events.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/events.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/programming.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/programming.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/media.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/media.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/floor.html</loc>
-    <lastmod>2025-02-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/spotlight.html</loc>
-    <lastmod>2025-02-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/register.html</loc>
-    <lastmod>2025-02-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/travels.html</loc>
-    <lastmod>2025-02-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/awards.html</loc>
-    <lastmod>2025-02-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:5500/DesignweekAfrica/Designweek/student.html</loc>
+    <loc>https://designweek.africa/DesignweekAfrica/Designweek/floor.html</loc>
     <lastmod>2025-02-26</lastmod>
     <priority>0.8</priority>
   </url>
